@@ -1,0 +1,6026 @@
+{
+ "metrics": {
+  "hot-days": "Hot days",
+  "danger-days": "Dangerous heat",
+  "hot-nights": "Hot nights",
+  "freezing": "Freezing days"
+ },
+ "cities": {
+  "recife": {
+   "name": "Recife",
+   "country": "Brazil",
+   "lat": -8.05,
+   "lon": -34.9,
+   "metrics": {
+    "hot-days": {
+     "past": 46.3,
+     "present": 39.0,
+     "near": 77.8,
+     "farLow": 116.2,
+     "farHigh": 181.8
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.2,
+     "present": 3.2,
+     "near": 9.8,
+     "farLow": 59.7,
+     "farHigh": 181.5
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "sao-paulo": {
+   "name": "São Paulo",
+   "country": "Brazil",
+   "lat": -23.55,
+   "lon": -46.63,
+   "metrics": {
+    "hot-days": {
+     "past": 14.8,
+     "present": 32.8,
+     "near": 49.6,
+     "farLow": 75.7,
+     "farHigh": 130.6
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.1
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "manaus": {
+   "name": "Manaus",
+   "country": "Brazil",
+   "lat": -3.12,
+   "lon": -60.02,
+   "metrics": {
+    "hot-days": {
+     "past": 119.1,
+     "present": 204.0,
+     "near": 247.1,
+     "farLow": 276.1,
+     "farHigh": 290.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 31.2
+    },
+    "hot-nights": {
+     "past": 0.8,
+     "present": 45.5,
+     "near": 102.9,
+     "farLow": 211.6,
+     "farHigh": 364.5
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "cuiaba": {
+   "name": "Cuiabá",
+   "country": "Brazil",
+   "lat": -15.6,
+   "lon": -56.1,
+   "metrics": {
+    "hot-days": {
+     "past": 234.0,
+     "present": 283.6,
+     "near": 307.2,
+     "farLow": 322.9,
+     "farHigh": 337.9
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 5.0,
+     "near": 6.3,
+     "farLow": 14.2,
+     "farHigh": 55.1
+    },
+    "hot-nights": {
+     "past": 2.0,
+     "present": 20.0,
+     "near": 50.7,
+     "farLow": 106.8,
+     "farHigh": 234.6
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "rio": {
+   "name": "Rio de Janeiro",
+   "country": "Brazil",
+   "lat": -22.91,
+   "lon": -43.17,
+   "metrics": {
+    "hot-days": {
+     "past": 93.1,
+     "present": 86.2,
+     "near": 106.5,
+     "farLow": 142.3,
+     "farHigh": 204.4
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.1,
+     "near": 0.1,
+     "farLow": 0.1,
+     "farHigh": 0.1
+    },
+    "hot-nights": {
+     "past": 0.8,
+     "present": 5.1,
+     "near": 15.1,
+     "farLow": 43.9,
+     "farHigh": 106.3
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "brasilia": {
+   "name": "Brasília",
+   "country": "Brazil",
+   "lat": -15.79,
+   "lon": -47.88,
+   "metrics": {
+    "hot-days": {
+     "past": 14.4,
+     "present": 45.4,
+     "near": 80.0,
+     "farLow": 126.2,
+     "farHigh": 228.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.1
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 8.2
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "salvador": {
+   "name": "Salvador",
+   "country": "Brazil",
+   "lat": -12.97,
+   "lon": -38.5,
+   "metrics": {
+    "hot-days": {
+     "past": 6.9,
+     "present": 26.5,
+     "near": 36.7,
+     "farLow": 62.9,
+     "farHigh": 150.8
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 1.2,
+     "present": 8.3,
+     "near": 72.0,
+     "farLow": 144.7,
+     "farHigh": 223.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "porto-alegre": {
+   "name": "Porto Alegre",
+   "country": "Brazil",
+   "lat": -30.03,
+   "lon": -51.23,
+   "metrics": {
+    "hot-days": {
+     "past": 52.5,
+     "present": 60.5,
+     "near": 75.6,
+     "farLow": 91.3,
+     "farHigh": 124.9
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.5,
+     "near": 0.6,
+     "farLow": 2.0,
+     "farHigh": 13.1
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "punta-arenas": {
+   "name": "Punta Arenas",
+   "country": "Chile",
+   "lat": -53.16,
+   "lon": -70.91,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 47.6,
+     "present": 44.1,
+     "near": 32.3,
+     "farLow": 20.7,
+     "farHigh": 3.6
+    }
+   }
+  },
+  "puno": {
+   "name": "Puno",
+   "country": "Peru",
+   "lat": -15.84,
+   "lon": -70.02,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 93.6,
+     "present": 26.2,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "caracas": {
+   "name": "Caracas",
+   "country": "Venezuela",
+   "lat": 10.48,
+   "lon": -66.9,
+   "metrics": {
+    "hot-days": {
+     "past": 26.2,
+     "present": 25.4,
+     "near": 105.1,
+     "farLow": 216.0,
+     "farHigh": 292.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 1.1
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "guayaquil": {
+   "name": "Guayaquil",
+   "country": "Ecuador",
+   "lat": -2.19,
+   "lon": -79.92,
+   "metrics": {
+    "hot-days": {
+     "past": 49.7,
+     "present": 102.9,
+     "near": 173.2,
+     "farLow": 247.6,
+     "farHigh": 351.8
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.1,
+     "near": 0.1,
+     "farLow": 6.4,
+     "farHigh": 125.9
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "ica": {
+   "name": "Ica",
+   "country": "Peru",
+   "lat": -14.07,
+   "lon": -75.73,
+   "metrics": {
+    "hot-days": {
+     "past": 30.4,
+     "present": 132.4,
+     "near": 156.0,
+     "farLow": 223.3,
+     "farHigh": 360.7
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "santa-cruz": {
+   "name": "Santa Cruz de la Sierra",
+   "country": "Bolivia",
+   "lat": -17.78,
+   "lon": -63.18,
+   "metrics": {
+    "hot-days": {
+     "past": 72.9,
+     "present": 122.3,
+     "near": 157.9,
+     "farLow": 192.8,
+     "farHigh": 247.4
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 13.9
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 1.5,
+     "near": 7.8,
+     "farLow": 29.3,
+     "farHigh": 122.7
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "potosi": {
+   "name": "Potosí",
+   "country": "Bolivia",
+   "lat": -19.59,
+   "lon": -65.75,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 145.8,
+     "present": 63.6,
+     "near": 39.4,
+     "farLow": 15.8,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "mendoza": {
+   "name": "Mendoza",
+   "country": "Argentina",
+   "lat": -32.89,
+   "lon": -68.85,
+   "metrics": {
+    "hot-days": {
+     "past": 28.0,
+     "present": 60.4,
+     "near": 73.2,
+     "farLow": 90.9,
+     "farHigh": 116.4
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.1,
+     "near": 0.1,
+     "farLow": 0.1,
+     "farHigh": 2.4
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.9,
+     "near": 0.9,
+     "farLow": 1.2,
+     "farHigh": 7.7
+    },
+    "freezing": {
+     "past": 15.0,
+     "present": 5.6,
+     "near": 4.4,
+     "farLow": 3.0,
+     "farHigh": 1.7
+    }
+   }
+  },
+  "san-julian": {
+   "name": "Puerto San Julián",
+   "country": "Argentina",
+   "lat": -49.31,
+   "lon": -67.72,
+   "metrics": {
+    "hot-days": {
+     "past": 0.6,
+     "present": 6.2,
+     "near": 6.2,
+     "farLow": 6.2,
+     "farHigh": 6.3
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 29.7,
+     "present": 44.5,
+     "near": 41.5,
+     "farLow": 37.5,
+     "farHigh": 30.9
+    }
+   }
+  },
+  "coyhaique": {
+   "name": "Coyhaique",
+   "country": "Chile",
+   "lat": -45.57,
+   "lon": -72.07,
+   "metrics": {
+    "hot-days": {
+     "past": 0.1,
+     "present": 0.5,
+     "near": 0.5,
+     "farLow": 0.5,
+     "farHigh": 1.4
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 79.6,
+     "present": 70.9,
+     "near": 59.1,
+     "farLow": 40.9,
+     "farHigh": 22.8
+    }
+   }
+  },
+  "ushuaia": {
+   "name": "Ushuaia",
+   "country": "Argentina",
+   "lat": -54.8,
+   "lon": -68.3,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 152.8,
+     "present": 121.9,
+     "near": 109.9,
+     "farLow": 94.3,
+     "farHigh": 68.5
+    }
+   }
+  },
+  "hanga-roa": {
+   "name": "Hanga Roa",
+   "country": "Chile",
+   "lat": -27.15,
+   "lon": -109.35,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 2.4
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "detroit": {
+   "name": "Detroit",
+   "country": "USA",
+   "lat": 42.33,
+   "lon": -83.05,
+   "metrics": {
+    "hot-days": {
+     "past": 15.9,
+     "present": 20.3,
+     "near": 37.9,
+     "farLow": 52.9,
+     "farHigh": 83.4
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.2,
+     "present": 0.0,
+     "near": 1.5,
+     "farLow": 5.0,
+     "farHigh": 23.4
+    },
+    "freezing": {
+     "past": 119.7,
+     "present": 111.0,
+     "near": 100.1,
+     "farLow": 86.7,
+     "farHigh": 65.9
+    }
+   }
+  },
+  "chicago": {
+   "name": "Chicago",
+   "country": "USA",
+   "lat": 41.85,
+   "lon": -87.65,
+   "metrics": {
+    "hot-days": {
+     "past": 14.0,
+     "present": 20.1,
+     "near": 39.5,
+     "farLow": 54.4,
+     "farHigh": 85.3
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 1.8,
+     "present": 0.0,
+     "near": 2.9,
+     "farLow": 6.8,
+     "farHigh": 34.6
+    },
+    "freezing": {
+     "past": 108.2,
+     "present": 103.0,
+     "near": 92.8,
+     "farLow": 80.2,
+     "farHigh": 60.6
+    }
+   }
+  },
+  "san-jose": {
+   "name": "San Jose",
+   "country": "USA",
+   "lat": 37.34,
+   "lon": -121.89,
+   "metrics": {
+    "hot-days": {
+     "past": 39.7,
+     "present": 47.1,
+     "near": 52.7,
+     "farLow": 63.8,
+     "farHigh": 96.5
+    },
+    "danger-days": {
+     "past": 0.1,
+     "present": 1.1,
+     "near": 1.1,
+     "farLow": 1.1,
+     "farHigh": 1.1
+    },
+    "hot-nights": {
+     "past": 0.2,
+     "present": 0.1,
+     "near": 0.1,
+     "farLow": 0.1,
+     "farHigh": 0.1
+    },
+    "freezing": {
+     "past": 1.2,
+     "present": 0.3,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "phoenix": {
+   "name": "Phoenix",
+   "country": "USA",
+   "lat": 33.45,
+   "lon": -112.07,
+   "metrics": {
+    "hot-days": {
+     "past": 176.0,
+     "present": 190.7,
+     "near": 202.9,
+     "farLow": 211.3,
+     "farHigh": 230.5
+    },
+    "danger-days": {
+     "past": 50.2,
+     "present": 67.3,
+     "near": 81.8,
+     "farLow": 95.7,
+     "farHigh": 122.9
+    },
+    "hot-nights": {
+     "past": 58.3,
+     "present": 75.9,
+     "near": 86.8,
+     "farLow": 97.8,
+     "farHigh": 122.4
+    },
+    "freezing": {
+     "past": 5.9,
+     "present": 2.9,
+     "near": 1.2,
+     "farLow": 0.9,
+     "farHigh": 1.0
+    }
+   }
+  },
+  "houston": {
+   "name": "Houston",
+   "country": "USA",
+   "lat": 29.76,
+   "lon": -95.37,
+   "metrics": {
+    "hot-days": {
+     "past": 114.1,
+     "present": 114.7,
+     "near": 130.7,
+     "farLow": 146.6,
+     "farHigh": 174.2
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.2,
+     "near": 0.2,
+     "farLow": 0.2,
+     "farHigh": 2.7
+    },
+    "hot-nights": {
+     "past": 5.2,
+     "present": 13.4,
+     "near": 33.9,
+     "farLow": 68.9,
+     "farHigh": 122.0
+    },
+    "freezing": {
+     "past": 6.6,
+     "present": 4.8,
+     "near": 3.5,
+     "farLow": 2.0,
+     "farHigh": 0.6
+    }
+   }
+  },
+  "miami": {
+   "name": "Miami",
+   "country": "USA",
+   "lat": 25.76,
+   "lon": -80.19,
+   "metrics": {
+    "hot-days": {
+     "past": 38.1,
+     "present": 91.2,
+     "near": 122.6,
+     "farLow": 158.6,
+     "farHigh": 202.7
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 34.2,
+     "present": 47.8,
+     "near": 74.8,
+     "farLow": 99.3,
+     "farHigh": 142.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "nyc": {
+   "name": "New York City",
+   "country": "USA",
+   "lat": 40.71,
+   "lon": -74.01,
+   "metrics": {
+    "hot-days": {
+     "past": 22.7,
+     "present": 31.5,
+     "near": 46.5,
+     "farLow": 63.0,
+     "farHigh": 93.8
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.2,
+     "present": 0.2,
+     "near": 5.2,
+     "farLow": 12.4,
+     "farHigh": 42.7
+    },
+    "freezing": {
+     "past": 96.5,
+     "present": 80.7,
+     "near": 70.7,
+     "farLow": 58.1,
+     "farHigh": 43.0
+    }
+   }
+  },
+  "vancouver": {
+   "name": "Vancouver",
+   "country": "Canada",
+   "lat": 49.25,
+   "lon": -123.12,
+   "metrics": {
+    "hot-days": {
+     "past": 2.9,
+     "present": 1.2,
+     "near": 3.9,
+     "farLow": 7.7,
+     "farHigh": 24.4
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 42.6,
+     "present": 32.1,
+     "near": 22.9,
+     "farLow": 15.6,
+     "farHigh": 6.8
+    }
+   }
+  },
+  "montreal": {
+   "name": "Montreal",
+   "country": "Canada",
+   "lat": 45.51,
+   "lon": -73.56,
+   "metrics": {
+    "hot-days": {
+     "past": 7.1,
+     "present": 9.4,
+     "near": 20.2,
+     "farLow": 31.4,
+     "farHigh": 63.1
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.4,
+     "farHigh": 6.4
+    },
+    "freezing": {
+     "past": 145.2,
+     "present": 142.5,
+     "near": 134.9,
+     "farLow": 125.1,
+     "farHigh": 102.2
+    }
+   }
+  },
+  "anchorage": {
+   "name": "Anchorage",
+   "country": "USA",
+   "lat": 61.22,
+   "lon": -149.9,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.4,
+     "near": 0.4,
+     "farLow": 0.4,
+     "farHigh": 0.4
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 188.5,
+     "present": 180.4,
+     "near": 164.9,
+     "farLow": 151.2,
+     "farHigh": 120.4
+    }
+   }
+  },
+  "utqiagvik": {
+   "name": "Utqiagvik",
+   "country": "USA",
+   "lat": 71.29,
+   "lon": -156.79,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 293.7,
+     "present": 266.2,
+     "near": 252.6,
+     "farLow": 241.6,
+     "farHigh": 217.5
+    }
+   }
+  },
+  "yellowknife": {
+   "name": "Yellowknife",
+   "country": "Canada",
+   "lat": 62.45,
+   "lon": -114.37,
+   "metrics": {
+    "hot-days": {
+     "past": 0.2,
+     "present": 0.4,
+     "near": 0.4,
+     "farLow": 0.8,
+     "farHigh": 7.3
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 216.2,
+     "present": 215.7,
+     "near": 206.8,
+     "farLow": 200.8,
+     "farHigh": 186.6
+    }
+   }
+  },
+  "mexico-city": {
+   "name": "Mexico City",
+   "country": "Mexico",
+   "lat": 19.43,
+   "lon": -99.13,
+   "metrics": {
+    "hot-days": {
+     "past": 0.6,
+     "present": 14.7,
+     "near": 14.7,
+     "farLow": 18.5,
+     "farHigh": 47.7
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 0.4,
+     "present": 0.1,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "havana": {
+   "name": "Havana",
+   "country": "Cuba",
+   "lat": 23.13,
+   "lon": -82.38,
+   "metrics": {
+    "hot-days": {
+     "past": 136.9,
+     "present": 210.3,
+     "near": 244.5,
+     "farLow": 286.3,
+     "farHigh": 355.5
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 10.0,
+     "present": 22.4,
+     "near": 54.3,
+     "farLow": 91.2,
+     "farHigh": 150.6
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "honolulu": {
+   "name": "Honolulu",
+   "country": "USA",
+   "lat": 21.31,
+   "lon": -157.86,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 13.8,
+     "near": 13.8,
+     "farLow": 13.8,
+     "farHigh": 33.3
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.5,
+     "present": 2.0,
+     "near": 42.6,
+     "farLow": 112.7,
+     "farHigh": 206.3
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "laredo": {
+   "name": "Laredo",
+   "country": "USA",
+   "lat": 27.51,
+   "lon": -99.51,
+   "metrics": {
+    "hot-days": {
+     "past": 194.8,
+     "present": 206.7,
+     "near": 221.9,
+     "farLow": 232.4,
+     "farHigh": 255.1
+    },
+    "danger-days": {
+     "past": 5.9,
+     "present": 17.0,
+     "near": 34.6,
+     "farLow": 55.1,
+     "farHigh": 101.0
+    },
+    "hot-nights": {
+     "past": 33.5,
+     "present": 59.1,
+     "near": 90.6,
+     "farLow": 114.2,
+     "farHigh": 155.7
+    },
+    "freezing": {
+     "past": 2.3,
+     "present": 2.0,
+     "near": 1.8,
+     "farLow": 1.8,
+     "farHigh": 1.5
+    }
+   }
+  },
+  "oklahoma-city": {
+   "name": "Oklahoma City",
+   "country": "USA",
+   "lat": 35.47,
+   "lon": -97.52,
+   "metrics": {
+    "hot-days": {
+     "past": 90.4,
+     "present": 102.7,
+     "near": 116.0,
+     "farLow": 125.4,
+     "farHigh": 152.7
+    },
+    "danger-days": {
+     "past": 2.4,
+     "present": 0.8,
+     "near": 6.5,
+     "farLow": 11.1,
+     "farHigh": 35.9
+    },
+    "hot-nights": {
+     "past": 14.3,
+     "present": 13.5,
+     "near": 27.9,
+     "farLow": 42.7,
+     "farHigh": 83.7
+    },
+    "freezing": {
+     "past": 55.3,
+     "present": 47.3,
+     "near": 38.9,
+     "farLow": 32.0,
+     "farHigh": 19.5
+    }
+   }
+  },
+  "fargo": {
+   "name": "Fargo",
+   "country": "USA",
+   "lat": 46.88,
+   "lon": -96.79,
+   "metrics": {
+    "hot-days": {
+     "past": 22.0,
+     "present": 22.8,
+     "near": 39.9,
+     "farLow": 54.2,
+     "farHigh": 78.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 5.3
+    },
+    "hot-nights": {
+     "past": 0.3,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.3,
+     "farHigh": 7.7
+    },
+    "freezing": {
+     "past": 161.9,
+     "present": 161.1,
+     "near": 153.3,
+     "farLow": 145.0,
+     "farHigh": 123.1
+    }
+   }
+  },
+  "billings": {
+   "name": "Billings",
+   "country": "USA",
+   "lat": 45.78,
+   "lon": -108.5,
+   "metrics": {
+    "hot-days": {
+     "past": 46.4,
+     "present": 54.8,
+     "near": 64.2,
+     "farLow": 72.5,
+     "farHigh": 93.7
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.5,
+     "near": 1.2,
+     "farLow": 4.5,
+     "farHigh": 26.6
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.1,
+     "near": 0.1,
+     "farLow": 0.1,
+     "farHigh": 1.0
+    },
+    "freezing": {
+     "past": 144.9,
+     "present": 136.7,
+     "near": 123.5,
+     "farLow": 111.8,
+     "farHigh": 94.5
+    }
+   }
+  },
+  "monterrey": {
+   "name": "Monterrey",
+   "country": "Mexico",
+   "lat": 25.69,
+   "lon": -100.32,
+   "metrics": {
+    "hot-days": {
+     "past": 110.9,
+     "present": 148.3,
+     "near": 165.5,
+     "farLow": 185.5,
+     "farHigh": 224.9
+    },
+    "danger-days": {
+     "past": 0.2,
+     "present": 2.2,
+     "near": 2.4,
+     "farLow": 5.6,
+     "farHigh": 29.6
+    },
+    "hot-nights": {
+     "past": 0.2,
+     "present": 0.7,
+     "near": 2.7,
+     "farLow": 14.9,
+     "farHigh": 79.5
+    },
+    "freezing": {
+     "past": 1.3,
+     "present": 1.9,
+     "near": 1.8,
+     "farLow": 1.8,
+     "farHigh": 1.6
+    }
+   }
+  },
+  "guadalajara": {
+   "name": "Guadalajara",
+   "country": "Mexico",
+   "lat": 20.66,
+   "lon": -103.35,
+   "metrics": {
+    "hot-days": {
+     "past": 65.1,
+     "present": 99.9,
+     "near": 122.9,
+     "farLow": 157.8,
+     "farHigh": 247.4
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.2
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "merida": {
+   "name": "Mérida",
+   "country": "Mexico",
+   "lat": 20.97,
+   "lon": -89.62,
+   "metrics": {
+    "hot-days": {
+     "past": 256.7,
+     "present": 284.8,
+     "near": 299.7,
+     "farLow": 312.8,
+     "farHigh": 327.2
+    },
+    "danger-days": {
+     "past": 0.5,
+     "present": 4.5,
+     "near": 4.5,
+     "farLow": 6.3,
+     "farHigh": 26.9
+    },
+    "hot-nights": {
+     "past": 4.6,
+     "present": 7.1,
+     "near": 23.6,
+     "farLow": 70.7,
+     "farHigh": 167.1
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "tijuana": {
+   "name": "Tijuana",
+   "country": "Mexico",
+   "lat": 32.53,
+   "lon": -117.04,
+   "metrics": {
+    "hot-days": {
+     "past": 2.9,
+     "present": 6.5,
+     "near": 6.5,
+     "farLow": 6.5,
+     "farHigh": 9.9
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 1.2
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "guatemala-city": {
+   "name": "Guatemala City",
+   "country": "Guatemala",
+   "lat": 14.63,
+   "lon": -90.53,
+   "metrics": {
+    "hot-days": {
+     "past": 2.5,
+     "present": 7.9,
+     "near": 38.1,
+     "farLow": 98.6,
+     "farHigh": 217.1
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "san-salvador": {
+   "name": "San Salvador",
+   "country": "El Salvador",
+   "lat": 13.69,
+   "lon": -89.19,
+   "metrics": {
+    "hot-days": {
+     "past": 110.5,
+     "present": 155.3,
+     "near": 189.5,
+     "farLow": 208.2,
+     "farHigh": 216.7
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 1.3,
+     "farHigh": 83.4
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "tegucigalpa": {
+   "name": "Tegucigalpa",
+   "country": "Honduras",
+   "lat": 14.1,
+   "lon": -87.2,
+   "metrics": {
+    "hot-days": {
+     "past": 58.2,
+     "present": 67.8,
+     "near": 93.6,
+     "farLow": 149.2,
+     "farHigh": 273.9
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "managua": {
+   "name": "Managua",
+   "country": "Nicaragua",
+   "lat": 12.15,
+   "lon": -86.25,
+   "metrics": {
+    "hot-days": {
+     "past": 274.3,
+     "present": 323.5,
+     "near": 326.1,
+     "farLow": 327.0,
+     "farHigh": 326.3
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 21.2
+    },
+    "hot-nights": {
+     "past": 21.5,
+     "present": 21.3,
+     "near": 77.5,
+     "farLow": 184.4,
+     "farHigh": 321.6
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "san-jose-cr": {
+   "name": "San José",
+   "country": "Costa Rica",
+   "lat": 9.93,
+   "lon": -84.09,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 1.1,
+     "near": 1.1,
+     "farLow": 1.1,
+     "farHigh": 1.1
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "portland": {
+   "name": "Portland",
+   "country": "USA",
+   "lat": 45.52,
+   "lon": -122.68,
+   "metrics": {
+    "hot-days": {
+     "past": 21.0,
+     "present": 32.7,
+     "near": 40.0,
+     "farLow": 53.3,
+     "farHigh": 75.9
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.6,
+     "near": 0.6,
+     "farLow": 0.6,
+     "farHigh": 3.9
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 43.6,
+     "present": 29.9,
+     "near": 24.0,
+     "farLow": 19.3,
+     "farHigh": 15.4
+    }
+   }
+  },
+  "iqaluit": {
+   "name": "Iqaluit",
+   "country": "Canada",
+   "lat": 63.75,
+   "lon": -68.51,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 270.9,
+     "present": 265.4,
+     "near": 255.8,
+     "farLow": 243.6,
+     "farHigh": 219.8
+    }
+   }
+  },
+  "halifax": {
+   "name": "Halifax",
+   "country": "Canada",
+   "lat": 44.65,
+   "lon": -63.57,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.4,
+     "near": 0.4,
+     "farLow": 0.4,
+     "farHigh": 6.6
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 112.4,
+     "present": 117.6,
+     "near": 106.3,
+     "farLow": 92.2,
+     "farHigh": 72.6
+    }
+   }
+  },
+  "panama-city": {
+   "name": "Panama City",
+   "country": "Panama",
+   "lat": 8.99,
+   "lon": -79.52,
+   "metrics": {
+    "hot-days": {
+     "past": 58.0,
+     "present": 159.0,
+     "near": 253.3,
+     "farLow": 365.0,
+     "farHigh": 365.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.7,
+     "present": 7.3,
+     "near": 42.8,
+     "farLow": 199.8,
+     "farHigh": 361.7
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "san-juan": {
+   "name": "San Juan",
+   "country": "Puerto Rico",
+   "lat": 18.47,
+   "lon": -66.11,
+   "metrics": {
+    "hot-days": {
+     "past": 172.3,
+     "present": 178.8,
+     "near": 223.2,
+     "farLow": 266.7,
+     "farHigh": 353.7
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 22.0,
+     "near": 67.1,
+     "farLow": 117.1,
+     "farHigh": 204.3
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "port-of-spain": {
+   "name": "Port of Spain",
+   "country": "Trinidad and Tobago",
+   "lat": 10.65,
+   "lon": -61.52,
+   "metrics": {
+    "hot-days": {
+     "past": 13.4,
+     "present": 214.9,
+     "near": 215.2,
+     "farLow": 231.0,
+     "farHigh": 365.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 29.9,
+     "present": 27.7,
+     "near": 148.6,
+     "farLow": 238.8,
+     "farHigh": 257.5
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "reykjavik": {
+   "name": "Reykjavik",
+   "country": "Iceland",
+   "lat": 64.15,
+   "lon": -21.94,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 145.9,
+     "present": 115.2,
+     "near": 109.6,
+     "farLow": 87.4,
+     "farHigh": 59.5
+    }
+   }
+  },
+  "zurich": {
+   "name": "Zurich",
+   "country": "Switzerland",
+   "lat": 47.38,
+   "lon": 8.54,
+   "metrics": {
+    "hot-days": {
+     "past": 1.4,
+     "present": 8.2,
+     "near": 13.4,
+     "farLow": 21.2,
+     "farHigh": 45.8
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 84.5,
+     "present": 73.7,
+     "near": 67.8,
+     "farLow": 57.8,
+     "farHigh": 38.0
+    }
+   }
+  },
+  "paris": {
+   "name": "Paris",
+   "country": "France",
+   "lat": 48.86,
+   "lon": 2.35,
+   "metrics": {
+    "hot-days": {
+     "past": 2.1,
+     "present": 12.3,
+     "near": 17.0,
+     "farLow": 24.0,
+     "farHigh": 46.2
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.1,
+     "near": 0.1,
+     "farLow": 0.1,
+     "farHigh": 0.2
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.1
+    },
+    "freezing": {
+     "past": 51.0,
+     "present": 33.5,
+     "near": 29.9,
+     "farLow": 23.6,
+     "farHigh": 9.4
+    }
+   }
+  },
+  "berlin": {
+   "name": "Berlin",
+   "country": "Germany",
+   "lat": 52.52,
+   "lon": 13.4,
+   "metrics": {
+    "hot-days": {
+     "past": 2.5,
+     "present": 12.6,
+     "near": 17.4,
+     "farLow": 23.4,
+     "farHigh": 40.9
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.1
+    },
+    "freezing": {
+     "past": 85.3,
+     "present": 61.7,
+     "near": 55.7,
+     "farLow": 43.7,
+     "farHigh": 27.2
+    }
+   }
+  },
+  "rome": {
+   "name": "Rome",
+   "country": "Italy",
+   "lat": 41.9,
+   "lon": 12.5,
+   "metrics": {
+    "hot-days": {
+     "past": 25.4,
+     "present": 72.4,
+     "near": 86.4,
+     "farLow": 104.3,
+     "farHigh": 127.8
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.1,
+     "near": 0.1,
+     "farLow": 0.1,
+     "farHigh": 2.7
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.2,
+     "near": 0.2,
+     "farLow": 0.2,
+     "farHigh": 23.0
+    },
+    "freezing": {
+     "past": 11.0,
+     "present": 6.2,
+     "near": 4.6,
+     "farLow": 1.7,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "madrid": {
+   "name": "Madrid",
+   "country": "Spain",
+   "lat": 40.42,
+   "lon": -3.7,
+   "metrics": {
+    "hot-days": {
+     "past": 57.0,
+     "present": 81.1,
+     "near": 93.1,
+     "farLow": 108.3,
+     "farHigh": 130.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 1.2,
+     "near": 2.7,
+     "farLow": 9.6,
+     "farHigh": 37.9
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.3,
+     "farHigh": 16.0
+    },
+    "freezing": {
+     "past": 45.9,
+     "present": 25.9,
+     "near": 21.8,
+     "farLow": 15.5,
+     "farHigh": 8.5
+    }
+   }
+  },
+  "london": {
+   "name": "London",
+   "country": "United Kingdom",
+   "lat": 51.51,
+   "lon": -0.13,
+   "metrics": {
+    "hot-days": {
+     "past": 0.1,
+     "present": 3.2,
+     "near": 3.2,
+     "farLow": 3.6,
+     "farHigh": 7.8
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 45.0,
+     "present": 30.6,
+     "near": 25.8,
+     "farLow": 23.0,
+     "farHigh": 13.9
+    }
+   }
+  },
+  "helsinki": {
+   "name": "Helsinki",
+   "country": "Finland",
+   "lat": 60.17,
+   "lon": 24.94,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.2,
+     "near": 0.2,
+     "farLow": 0.6,
+     "farHigh": 5.9
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 142.1,
+     "present": 121.9,
+     "near": 102.8,
+     "farLow": 85.2,
+     "farHigh": 48.7
+    }
+   }
+  },
+  "stockholm": {
+   "name": "Stockholm",
+   "country": "Sweden",
+   "lat": 59.33,
+   "lon": 18.06,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.7,
+     "near": 0.7,
+     "farLow": 0.7,
+     "farHigh": 2.5
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 122.4,
+     "present": 110.5,
+     "near": 90.0,
+     "farLow": 74.8,
+     "farHigh": 46.1
+    }
+   }
+  },
+  "athens": {
+   "name": "Athens",
+   "country": "Greece",
+   "lat": 37.98,
+   "lon": 23.73,
+   "metrics": {
+    "hot-days": {
+     "past": 69.1,
+     "present": 83.4,
+     "near": 92.7,
+     "farLow": 105.1,
+     "farHigh": 120.8
+    },
+    "danger-days": {
+     "past": 0.8,
+     "present": 0.6,
+     "near": 0.6,
+     "farLow": 0.7,
+     "farHigh": 9.9
+    },
+    "hot-nights": {
+     "past": 0.8,
+     "present": 5.4,
+     "near": 8.4,
+     "farLow": 19.1,
+     "farHigh": 58.4
+    },
+    "freezing": {
+     "past": 2.8,
+     "present": 3.6,
+     "near": 2.3,
+     "farLow": 1.7,
+     "farHigh": 1.4
+    }
+   }
+  },
+  "kyiv": {
+   "name": "Kyiv",
+   "country": "Ukraine",
+   "lat": 50.45,
+   "lon": 30.52,
+   "metrics": {
+    "hot-days": {
+     "past": 1.2,
+     "present": 14.8,
+     "near": 23.3,
+     "farLow": 34.0,
+     "farHigh": 60.1
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.1
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 1.5
+    },
+    "freezing": {
+     "past": 126.9,
+     "present": 99.9,
+     "near": 90.5,
+     "farLow": 78.2,
+     "farHigh": 51.8
+    }
+   }
+  },
+  "oslo": {
+   "name": "Oslo",
+   "country": "Norway",
+   "lat": 59.91,
+   "lon": 10.75,
+   "metrics": {
+    "hot-days": {
+     "past": 0.9,
+     "present": 1.0,
+     "near": 1.1,
+     "farLow": 1.4,
+     "farHigh": 6.9
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 142.4,
+     "present": 111.3,
+     "near": 97.4,
+     "farLow": 88.5,
+     "farHigh": 63.7
+    }
+   }
+  },
+  "edinburgh": {
+   "name": "Edinburgh",
+   "country": "Scotland",
+   "lat": 55.95,
+   "lon": -3.19,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 44.4,
+     "present": 29.2,
+     "near": 22.0,
+     "farLow": 18.1,
+     "farHigh": 12.8
+    }
+   }
+  },
+  "dublin": {
+   "name": "Dublin",
+   "country": "Ireland",
+   "lat": 53.35,
+   "lon": -6.26,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 12.0,
+     "present": 7.4,
+     "near": 4.4,
+     "farLow": 2.2,
+     "farHigh": 0.5
+    }
+   }
+  },
+  "longyearbyen": {
+   "name": "Longyearbyen",
+   "country": "Norway",
+   "lat": 78.22,
+   "lon": 15.63,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 270.2,
+     "present": 243.8,
+     "near": 224.0,
+     "farLow": 199.5,
+     "farHigh": 160.5
+    }
+   }
+  },
+  "st-petersburg": {
+   "name": "St. Petersburg",
+   "country": "Russia",
+   "lat": 59.94,
+   "lon": 30.31,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 1.7,
+     "near": 2.1,
+     "farLow": 2.8,
+     "farHigh": 8.6
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 156.2,
+     "present": 135.8,
+     "near": 115.5,
+     "farLow": 102.1,
+     "farHigh": 68.1
+    }
+   }
+  },
+  "novosibirsk": {
+   "name": "Novosibirsk",
+   "country": "Russia",
+   "lat": 55.03,
+   "lon": 82.9,
+   "metrics": {
+    "hot-days": {
+     "past": 1.4,
+     "present": 4.9,
+     "near": 11.3,
+     "farLow": 20.1,
+     "farHigh": 46.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 197.3,
+     "present": 187.8,
+     "near": 179.0,
+     "farLow": 173.2,
+     "farHigh": 155.7
+    }
+   }
+  },
+  "yakutsk": {
+   "name": "Yakutsk",
+   "country": "Russia",
+   "lat": 62.0,
+   "lon": 129.7,
+   "metrics": {
+    "hot-days": {
+     "past": 5.4,
+     "present": 8.3,
+     "near": 12.1,
+     "farLow": 19.1,
+     "farHigh": 35.1
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 235.5,
+     "present": 230.9,
+     "near": 226.2,
+     "farLow": 220.2,
+     "farHigh": 208.5
+    }
+   }
+  },
+  "verkhoyansk": {
+   "name": "Verkhoyansk",
+   "country": "Russia",
+   "lat": 67.55,
+   "lon": 133.39,
+   "metrics": {
+    "hot-days": {
+     "past": 2.7,
+     "present": 4.2,
+     "near": 6.3,
+     "farLow": 9.8,
+     "farHigh": 17.6
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 252.4,
+     "present": 247.1,
+     "near": 241.5,
+     "farLow": 235.6,
+     "farHigh": 223.8
+    }
+   }
+  },
+  "dubai": {
+   "name": "Dubai",
+   "country": "United Arab Emirates",
+   "lat": 25.2,
+   "lon": 55.3,
+   "metrics": {
+    "hot-days": {
+     "past": 235.7,
+     "present": 236.7,
+     "near": 247.2,
+     "farLow": 260.1,
+     "farHigh": 287.3
+    },
+    "danger-days": {
+     "past": 68.4,
+     "present": 71.7,
+     "near": 98.5,
+     "farLow": 132.8,
+     "farHigh": 172.2
+    },
+    "hot-nights": {
+     "past": 98.2,
+     "present": 138.3,
+     "near": 154.3,
+     "farLow": 169.1,
+     "farHigh": 194.1
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "riyadh": {
+   "name": "Riyadh",
+   "country": "Saudi Arabia",
+   "lat": 24.7,
+   "lon": 46.7,
+   "metrics": {
+    "hot-days": {
+     "past": 211.9,
+     "present": 226.6,
+     "near": 235.8,
+     "farLow": 245.9,
+     "farHigh": 265.3
+    },
+    "danger-days": {
+     "past": 93.2,
+     "present": 115.9,
+     "near": 129.0,
+     "farLow": 140.0,
+     "farHigh": 161.9
+    },
+    "hot-nights": {
+     "past": 49.6,
+     "present": 117.5,
+     "near": 136.7,
+     "farLow": 150.2,
+     "farHigh": 179.4
+    },
+    "freezing": {
+     "past": 1.9,
+     "present": 0.3,
+     "near": 0.3,
+     "farLow": 0.3,
+     "farHigh": 0.3
+    }
+   }
+  },
+  "ahvaz": {
+   "name": "Ahvaz",
+   "country": "Iran",
+   "lat": 31.32,
+   "lon": 48.67,
+   "metrics": {
+    "hot-days": {
+     "past": 210.1,
+     "present": 215.6,
+     "near": 221.9,
+     "farLow": 229.3,
+     "farHigh": 246.1
+    },
+    "danger-days": {
+     "past": 139.5,
+     "present": 144.3,
+     "near": 153.2,
+     "farLow": 161.1,
+     "farHigh": 176.9
+    },
+    "hot-nights": {
+     "past": 115.5,
+     "present": 132.8,
+     "near": 145.7,
+     "farLow": 158.2,
+     "farHigh": 182.5
+    },
+    "freezing": {
+     "past": 0.1,
+     "present": 0.1,
+     "near": 0.1,
+     "farLow": 0.1,
+     "farHigh": 0.1
+    }
+   }
+  },
+  "tel-aviv": {
+   "name": "Tel Aviv",
+   "country": "Israel",
+   "lat": 32.08,
+   "lon": 34.78,
+   "metrics": {
+    "hot-days": {
+     "past": 55.6,
+     "present": 102.7,
+     "near": 135.2,
+     "farLow": 160.2,
+     "farHigh": 190.6
+    },
+    "danger-days": {
+     "past": 0.1,
+     "present": 0.5,
+     "near": 0.5,
+     "farLow": 0.5,
+     "farHigh": 0.5
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 2.6,
+     "near": 14.9,
+     "farLow": 45.5,
+     "farHigh": 101.5
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "sanaa": {
+   "name": "Sana'a",
+   "country": "Yemen",
+   "lat": 15.35,
+   "lon": 44.19,
+   "metrics": {
+    "hot-days": {
+     "past": 5.2,
+     "present": 17.3,
+     "near": 23.1,
+     "farLow": 43.8,
+     "farHigh": 99.3
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 0.2,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "baku": {
+   "name": "Baku",
+   "country": "Azerbaijan",
+   "lat": 40.41,
+   "lon": 49.87,
+   "metrics": {
+    "hot-days": {
+     "past": 11.0,
+     "present": 57.5,
+     "near": 71.6,
+     "farLow": 85.9,
+     "farHigh": 117.2
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.5,
+     "near": 0.5,
+     "farLow": 0.5,
+     "farHigh": 0.5
+    },
+    "hot-nights": {
+     "past": 2.9,
+     "present": 3.4,
+     "near": 20.7,
+     "farLow": 35.8,
+     "farHigh": 65.0
+    },
+    "freezing": {
+     "past": 4.7,
+     "present": 9.9,
+     "near": 9.4,
+     "farLow": 9.2,
+     "farHigh": 8.6
+    }
+   }
+  },
+  "lagos": {
+   "name": "Lagos",
+   "country": "Nigeria",
+   "lat": 6.52,
+   "lon": 3.38,
+   "metrics": {
+    "hot-days": {
+     "past": 74.1,
+     "present": 184.2,
+     "near": 257.9,
+     "farLow": 313.9,
+     "farHigh": 365.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 44.1,
+     "present": 79.9,
+     "near": 165.6,
+     "farLow": 239.7,
+     "farHigh": 318.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "khartoum": {
+   "name": "Khartoum",
+   "country": "Sudan",
+   "lat": 15.5,
+   "lon": 32.53,
+   "metrics": {
+    "hot-days": {
+     "past": 317.2,
+     "present": 332.8,
+     "near": 341.8,
+     "farLow": 351.2,
+     "farHigh": 358.2
+    },
+    "danger-days": {
+     "past": 57.0,
+     "present": 96.1,
+     "near": 127.1,
+     "farLow": 163.7,
+     "farHigh": 204.6
+    },
+    "hot-nights": {
+     "past": 88.3,
+     "present": 161.3,
+     "near": 184.0,
+     "farLow": 205.6,
+     "farHigh": 239.2
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "tamanrasset": {
+   "name": "Tamanrasset",
+   "country": "Algeria",
+   "lat": 22.79,
+   "lon": 5.53,
+   "metrics": {
+    "hot-days": {
+     "past": 177.8,
+     "present": 179.9,
+     "near": 190.8,
+     "farLow": 206.9,
+     "farHigh": 230.8
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.5,
+     "farLow": 11.3,
+     "farHigh": 81.6
+    },
+    "hot-nights": {
+     "past": 1.4,
+     "present": 2.6,
+     "near": 40.8,
+     "farLow": 79.0,
+     "farHigh": 122.7
+    },
+    "freezing": {
+     "past": 4.6,
+     "present": 0.8,
+     "near": 0.8,
+     "farLow": 0.8,
+     "farHigh": 0.8
+    }
+   }
+  },
+  "johannesburg": {
+   "name": "Johannesburg",
+   "country": "South Africa",
+   "lat": -26.2,
+   "lon": 28.05,
+   "metrics": {
+    "hot-days": {
+     "past": 1.5,
+     "present": 16.5,
+     "near": 32.9,
+     "farLow": 60.1,
+     "farHigh": 115.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 14.4,
+     "present": 4.2,
+     "near": 2.3,
+     "farLow": 1.0,
+     "farHigh": 0.6
+    }
+   }
+  },
+  "luanda": {
+   "name": "Luanda",
+   "country": "Angola",
+   "lat": -8.84,
+   "lon": 13.23,
+   "metrics": {
+    "hot-days": {
+     "past": 189.8,
+     "present": 107.7,
+     "near": 150.4,
+     "farLow": 195.0,
+     "farHigh": 254.2
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.8,
+     "present": 3.7,
+     "near": 43.6,
+     "farLow": 101.4,
+     "farHigh": 191.4
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "kinshasa": {
+   "name": "Kinshasa",
+   "country": "DR Congo",
+   "lat": -4.44,
+   "lon": 15.31,
+   "metrics": {
+    "hot-days": {
+     "past": 65.9,
+     "present": 214.3,
+     "near": 279.7,
+     "farLow": 330.4,
+     "farHigh": 365.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 1.5,
+     "farHigh": 91.1
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "djibouti-city": {
+   "name": "Djibouti City",
+   "country": "Djibouti",
+   "lat": 11.57,
+   "lon": 43.15,
+   "metrics": {
+    "hot-days": {
+     "past": 204.0,
+     "present": 226.0,
+     "near": 247.3,
+     "farLow": 281.7,
+     "farHigh": 349.0
+    },
+    "danger-days": {
+     "past": 7.1,
+     "present": 56.1,
+     "near": 69.1,
+     "farLow": 93.7,
+     "farHigh": 129.6
+    },
+    "hot-nights": {
+     "past": 168.0,
+     "present": 207.2,
+     "near": 231.9,
+     "farLow": 268.6,
+     "farHigh": 339.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "antananarivo": {
+   "name": "Antananarivo",
+   "country": "Madagascar",
+   "lat": -18.88,
+   "lon": 47.53,
+   "metrics": {
+    "hot-days": {
+     "past": 0.7,
+     "present": 5.2,
+     "near": 7.0,
+     "farLow": 17.6,
+     "farHigh": 59.4
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "abidjan": {
+   "name": "Abidjan",
+   "country": "Ivory Coast",
+   "lat": 5.36,
+   "lon": -4.03,
+   "metrics": {
+    "hot-days": {
+     "past": 41.2,
+     "present": 115.2,
+     "near": 130.1,
+     "farLow": 188.0,
+     "farHigh": 293.1
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.6,
+     "present": 5.7,
+     "near": 82.8,
+     "farLow": 139.5,
+     "farHigh": 215.7
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "praia": {
+   "name": "Praia",
+   "country": "Cabo Verde",
+   "lat": 14.92,
+   "lon": -23.51,
+   "metrics": {
+    "hot-days": {
+     "past": 40.9,
+     "present": 47.0,
+     "near": 48.1,
+     "farLow": 67.0,
+     "farHigh": 149.1
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.1,
+     "present": 0.4,
+     "near": 14.7,
+     "farLow": 38.7,
+     "farHigh": 89.9
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "dakar": {
+   "name": "Dakar",
+   "country": "Senegal",
+   "lat": 14.72,
+   "lon": -17.45,
+   "metrics": {
+    "hot-days": {
+     "past": 52.4,
+     "present": 72.4,
+     "near": 77.3,
+     "farLow": 98.9,
+     "farHigh": 164.6
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 32.1,
+     "present": 54.9,
+     "near": 80.6,
+     "farLow": 101.1,
+     "farHigh": 132.1
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "cairo": {
+   "name": "Cairo",
+   "country": "Egypt",
+   "lat": 30.04,
+   "lon": 31.24,
+   "metrics": {
+    "hot-days": {
+     "past": 167.9,
+     "present": 194.8,
+     "near": 202.1,
+     "farLow": 215.6,
+     "farHigh": 234.9
+    },
+    "danger-days": {
+     "past": 4.6,
+     "present": 22.8,
+     "near": 27.4,
+     "farLow": 38.0,
+     "farHigh": 89.4
+    },
+    "hot-nights": {
+     "past": 0.1,
+     "present": 3.6,
+     "near": 7.7,
+     "farLow": 23.1,
+     "farHigh": 88.4
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "tunis": {
+   "name": "Tunis",
+   "country": "Tunisia",
+   "lat": 36.81,
+   "lon": 10.18,
+   "metrics": {
+    "hot-days": {
+     "past": 69.1,
+     "present": 104.0,
+     "near": 119.7,
+     "farLow": 137.2,
+     "farHigh": 160.1
+    },
+    "danger-days": {
+     "past": 1.3,
+     "present": 9.6,
+     "near": 9.6,
+     "farLow": 9.6,
+     "farHigh": 11.4
+    },
+    "hot-nights": {
+     "past": 0.2,
+     "present": 3.0,
+     "near": 8.7,
+     "farLow": 24.3,
+     "farHigh": 68.9
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "dar-es-salaam": {
+   "name": "Dar es Salaam",
+   "country": "Tanzania",
+   "lat": -6.79,
+   "lon": 39.28,
+   "metrics": {
+    "hot-days": {
+     "past": 108.4,
+     "present": 133.2,
+     "near": 172.2,
+     "farLow": 234.1,
+     "farHigh": 354.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 10.5,
+     "present": 47.3,
+     "near": 96.8,
+     "farLow": 157.6,
+     "farHigh": 246.2
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "windhoek": {
+   "name": "Windhoek",
+   "country": "Namibia",
+   "lat": -22.57,
+   "lon": 17.08,
+   "metrics": {
+    "hot-days": {
+     "past": 83.4,
+     "present": 121.1,
+     "near": 151.2,
+     "farLow": 182.8,
+     "farHigh": 238.7
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 4.9,
+     "present": 1.6,
+     "near": 1.5,
+     "farLow": 1.5,
+     "farHigh": 1.4
+    }
+   }
+  },
+  "lusaka": {
+   "name": "Lusaka",
+   "country": "Zambia",
+   "lat": -15.42,
+   "lon": 28.28,
+   "metrics": {
+    "hot-days": {
+     "past": 31.9,
+     "present": 60.5,
+     "near": 83.4,
+     "farLow": 114.1,
+     "farHigh": 190.5
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 2.4
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.1,
+     "farHigh": 17.2
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "lubumbashi": {
+   "name": "Lubumbashi",
+   "country": "DR Congo",
+   "lat": -11.66,
+   "lon": 27.48,
+   "metrics": {
+    "hot-days": {
+     "past": 49.5,
+     "present": 66.8,
+     "near": 89.0,
+     "farLow": 129.8,
+     "farHigh": 231.7
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.1
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "kisangani": {
+   "name": "Kisangani",
+   "country": "DR Congo",
+   "lat": 0.52,
+   "lon": 25.19,
+   "metrics": {
+    "hot-days": {
+     "past": 90.0,
+     "present": 242.9,
+     "near": 296.2,
+     "farLow": 360.2,
+     "farHigh": 365.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 1.0,
+     "farLow": 7.2,
+     "farHigh": 136.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "brazzaville": {
+   "name": "Brazzaville",
+   "country": "Republic of the Congo",
+   "lat": -4.27,
+   "lon": 15.28,
+   "metrics": {
+    "hot-days": {
+     "past": 134.3,
+     "present": 208.7,
+     "near": 274.7,
+     "farLow": 334.3,
+     "farHigh": 365.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 3.2,
+     "farHigh": 110.6
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "ndjamena": {
+   "name": "N'Djamena",
+   "country": "Chad",
+   "lat": 12.13,
+   "lon": 15.03,
+   "metrics": {
+    "hot-days": {
+     "past": 329.7,
+     "present": 329.6,
+     "near": 336.9,
+     "farLow": 346.6,
+     "farHigh": 351.7
+    },
+    "danger-days": {
+     "past": 64.3,
+     "present": 74.9,
+     "near": 93.5,
+     "farLow": 117.1,
+     "farHigh": 153.0
+    },
+    "hot-nights": {
+     "past": 73.6,
+     "present": 98.9,
+     "near": 125.0,
+     "farLow": 168.2,
+     "farHigh": 224.3
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "bangui": {
+   "name": "Bangui",
+   "country": "Central African Republic",
+   "lat": 4.37,
+   "lon": 18.55,
+   "metrics": {
+    "hot-days": {
+     "past": 202.7,
+     "present": 261.0,
+     "near": 297.3,
+     "farLow": 325.6,
+     "farHigh": 351.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 3.6
+    },
+    "hot-nights": {
+     "past": 1.9,
+     "present": 1.7,
+     "near": 9.5,
+     "farLow": 38.3,
+     "farHigh": 162.7
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "kampala": {
+   "name": "Kampala",
+   "country": "Uganda",
+   "lat": 0.31,
+   "lon": 32.58,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 1.6,
+     "near": 1.6,
+     "farLow": 1.9,
+     "farHigh": 13.3
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "douala": {
+   "name": "Douala",
+   "country": "Cameroon",
+   "lat": 4.05,
+   "lon": 9.7,
+   "metrics": {
+    "hot-days": {
+     "past": 70.3,
+     "present": 143.8,
+     "near": 196.5,
+     "farLow": 248.5,
+     "farHigh": 314.1
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 3.4,
+     "near": 16.5,
+     "farLow": 104.4,
+     "farHigh": 321.4
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "marrakech": {
+   "name": "Marrakech",
+   "country": "Morocco",
+   "lat": 31.63,
+   "lon": -7.99,
+   "metrics": {
+    "hot-days": {
+     "past": 104.6,
+     "present": 154.4,
+     "near": 169.2,
+     "farLow": 185.0,
+     "farHigh": 217.9
+    },
+    "danger-days": {
+     "past": 6.6,
+     "present": 25.8,
+     "near": 30.2,
+     "farLow": 37.3,
+     "farHigh": 59.2
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 4.2,
+     "near": 5.8,
+     "farLow": 9.4,
+     "farHigh": 26.4
+    },
+    "freezing": {
+     "past": 10.5,
+     "present": 0.9,
+     "near": 0.9,
+     "farLow": 0.9,
+     "farHigh": 0.9
+    }
+   }
+  },
+  "niamey": {
+   "name": "Niamey",
+   "country": "Niger",
+   "lat": 13.5,
+   "lon": 2.1,
+   "metrics": {
+    "hot-days": {
+     "past": 340.0,
+     "present": 344.2,
+     "near": 351.9,
+     "farLow": 359.1,
+     "farHigh": 362.5
+    },
+    "danger-days": {
+     "past": 58.4,
+     "present": 60.0,
+     "near": 83.7,
+     "farLow": 116.0,
+     "farHigh": 170.5
+    },
+    "hot-nights": {
+     "past": 79.5,
+     "present": 98.0,
+     "near": 133.2,
+     "farLow": 178.6,
+     "farHigh": 222.1
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "addis-ababa": {
+   "name": "Addis Ababa",
+   "country": "Ethiopia",
+   "lat": 9.03,
+   "lon": 38.74,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 2.9
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "nairobi": {
+   "name": "Nairobi",
+   "country": "Kenya",
+   "lat": -1.29,
+   "lon": 36.82,
+   "metrics": {
+    "hot-days": {
+     "past": 0.6,
+     "present": 5.2,
+     "near": 8.9,
+     "farLow": 16.5,
+     "farHigh": 46.8
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "delhi": {
+   "name": "New Delhi",
+   "country": "India",
+   "lat": 28.61,
+   "lon": 77.21,
+   "metrics": {
+    "hot-days": {
+     "past": 214.2,
+     "present": 215.9,
+     "near": 226.5,
+     "farLow": 242.4,
+     "farHigh": 265.1
+    },
+    "danger-days": {
+     "past": 38.5,
+     "present": 27.3,
+     "near": 36.5,
+     "farLow": 50.4,
+     "farHigh": 67.7
+    },
+    "hot-nights": {
+     "past": 75.3,
+     "present": 80.7,
+     "near": 102.9,
+     "farLow": 123.9,
+     "farHigh": 151.8
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "nagpur": {
+   "name": "Nagpur",
+   "country": "India",
+   "lat": 21.15,
+   "lon": 79.09,
+   "metrics": {
+    "hot-days": {
+     "past": 218.9,
+     "present": 238.5,
+     "near": 266.2,
+     "farLow": 294.1,
+     "farHigh": 341.6
+    },
+    "danger-days": {
+     "past": 51.7,
+     "present": 47.0,
+     "near": 56.9,
+     "farLow": 68.0,
+     "farHigh": 81.9
+    },
+    "hot-nights": {
+     "past": 68.9,
+     "present": 59.8,
+     "near": 79.8,
+     "farLow": 115.6,
+     "farHigh": 181.8
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "chennai": {
+   "name": "Chennai",
+   "country": "India",
+   "lat": 13.08,
+   "lon": 80.27,
+   "metrics": {
+    "hot-days": {
+     "past": 246.1,
+     "present": 244.5,
+     "near": 262.0,
+     "farLow": 280.2,
+     "farHigh": 333.3
+    },
+    "danger-days": {
+     "past": 1.9,
+     "present": 1.2,
+     "near": 1.2,
+     "farLow": 1.2,
+     "farHigh": 1.2
+    },
+    "hot-nights": {
+     "past": 138.6,
+     "present": 144.8,
+     "near": 170.7,
+     "farLow": 197.0,
+     "farHigh": 257.1
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "colombo": {
+   "name": "Colombo",
+   "country": "Sri Lanka",
+   "lat": 6.93,
+   "lon": 79.86,
+   "metrics": {
+    "hot-days": {
+     "past": 122.6,
+     "present": 123.7,
+     "near": 182.2,
+     "farLow": 276.1,
+     "farHigh": 365.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 10.0,
+     "present": 29.0,
+     "near": 109.8,
+     "farLow": 181.7,
+     "farHigh": 226.2
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "jodhpur": {
+   "name": "Jodhpur",
+   "country": "India",
+   "lat": 26.29,
+   "lon": 73.02,
+   "metrics": {
+    "hot-days": {
+     "past": 248.3,
+     "present": 253.0,
+     "near": 264.5,
+     "farLow": 279.7,
+     "farHigh": 307.2
+    },
+    "danger-days": {
+     "past": 37.0,
+     "present": 38.2,
+     "near": 51.9,
+     "farLow": 67.4,
+     "farHigh": 93.2
+    },
+    "hot-nights": {
+     "past": 87.2,
+     "present": 103.7,
+     "near": 126.9,
+     "farLow": 148.2,
+     "farHigh": 176.5
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "kathmandu": {
+   "name": "Kathmandu",
+   "country": "Nepal",
+   "lat": 27.72,
+   "lon": 85.32,
+   "metrics": {
+    "hot-days": {
+     "past": 4.0,
+     "present": 2.4,
+     "near": 3.9,
+     "farLow": 12.6,
+     "farHigh": 41.3
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.1,
+     "near": 0.1,
+     "farLow": 0.1,
+     "farHigh": 0.1
+    }
+   }
+  },
+  "srinagar": {
+   "name": "Srinagar",
+   "country": "India",
+   "lat": 34.08,
+   "lon": 74.8,
+   "metrics": {
+    "hot-days": {
+     "past": 1.2,
+     "present": 22.1,
+     "near": 26.7,
+     "farLow": 38.4,
+     "farHigh": 74.1
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 85.4,
+     "present": 102.4,
+     "near": 88.4,
+     "farLow": 72.6,
+     "farHigh": 42.8
+    }
+   }
+  },
+  "dhaka": {
+   "name": "Dhaka",
+   "country": "Bangladesh",
+   "lat": 23.81,
+   "lon": 90.41,
+   "metrics": {
+    "hot-days": {
+     "past": 193.7,
+     "present": 212.9,
+     "near": 237.0,
+     "farLow": 264.4,
+     "farHigh": 303.4
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.5,
+     "near": 0.5,
+     "farLow": 0.5,
+     "farHigh": 2.0
+    },
+    "hot-nights": {
+     "past": 47.1,
+     "present": 88.6,
+     "near": 124.7,
+     "farLow": 155.2,
+     "farHigh": 190.7
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "jacobabad": {
+   "name": "Jacobabad",
+   "country": "Pakistan",
+   "lat": 28.28,
+   "lon": 68.44,
+   "metrics": {
+    "hot-days": {
+     "past": 250.2,
+     "present": 241.0,
+     "near": 247.8,
+     "farLow": 259.6,
+     "farHigh": 284.7
+    },
+    "danger-days": {
+     "past": 109.2,
+     "present": 89.1,
+     "near": 103.8,
+     "farLow": 125.9,
+     "farHigh": 161.6
+    },
+    "hot-nights": {
+     "past": 137.6,
+     "present": 140.8,
+     "near": 151.7,
+     "farLow": 165.2,
+     "farHigh": 190.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "beijing": {
+   "name": "Beijing",
+   "country": "China",
+   "lat": 39.9,
+   "lon": 116.41,
+   "metrics": {
+    "hot-days": {
+     "past": 62.8,
+     "present": 78.4,
+     "near": 93.0,
+     "farLow": 109.1,
+     "farHigh": 130.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 1.3,
+     "near": 1.8,
+     "farLow": 3.7,
+     "farHigh": 13.8
+    },
+    "hot-nights": {
+     "past": 0.7,
+     "present": 2.2,
+     "near": 12.7,
+     "farLow": 26.5,
+     "farHigh": 59.3
+    },
+    "freezing": {
+     "past": 137.8,
+     "present": 117.3,
+     "near": 107.7,
+     "farLow": 96.2,
+     "farHigh": 77.9
+    }
+   }
+  },
+  "lhasa": {
+   "name": "Lhasa",
+   "country": "China",
+   "lat": 29.65,
+   "lon": 91.13,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 181.0,
+     "present": 128.3,
+     "near": 118.9,
+     "farLow": 107.9,
+     "farHigh": 86.6
+    }
+   }
+  },
+  "tokyo": {
+   "name": "Tokyo",
+   "country": "Japan",
+   "lat": 35.68,
+   "lon": 139.69,
+   "metrics": {
+    "hot-days": {
+     "past": 12.9,
+     "present": 47.7,
+     "near": 57.8,
+     "farLow": 67.9,
+     "farHigh": 88.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 4.9,
+     "near": 19.5,
+     "farLow": 33.6,
+     "farHigh": 59.5
+    },
+    "freezing": {
+     "past": 59.9,
+     "present": 36.9,
+     "near": 29.9,
+     "farLow": 26.0,
+     "farHigh": 23.8
+    }
+   }
+  },
+  "seoul": {
+   "name": "Seoul",
+   "country": "South Korea",
+   "lat": 37.57,
+   "lon": 126.98,
+   "metrics": {
+    "hot-days": {
+     "past": 12.9,
+     "present": 29.0,
+     "near": 45.6,
+     "farLow": 63.8,
+     "farHigh": 95.9
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.8,
+     "near": 6.8,
+     "farLow": 17.6,
+     "farHigh": 48.7
+    },
+    "freezing": {
+     "past": 120.4,
+     "present": 112.1,
+     "near": 101.8,
+     "farLow": 92.1,
+     "farHigh": 74.3
+    }
+   }
+  },
+  "ulaanbaatar": {
+   "name": "Ulaanbaatar",
+   "country": "Mongolia",
+   "lat": 47.92,
+   "lon": 106.92,
+   "metrics": {
+    "hot-days": {
+     "past": 0.8,
+     "present": 6.3,
+     "near": 8.1,
+     "farLow": 10.6,
+     "farHigh": 25.6
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 228.4,
+     "present": 219.7,
+     "near": 213.4,
+     "farLow": 207.0,
+     "farHigh": 194.3
+    }
+   }
+  },
+  "nagqu": {
+   "name": "Nagqu",
+   "country": "China",
+   "lat": 31.48,
+   "lon": 92.07,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 288.5,
+     "present": 265.8,
+     "near": 258.1,
+     "farLow": 247.4,
+     "farHigh": 232.2
+    }
+   }
+  },
+  "sapporo": {
+   "name": "Sapporo",
+   "country": "Japan",
+   "lat": 43.06,
+   "lon": 141.35,
+   "metrics": {
+    "hot-days": {
+     "past": 0.6,
+     "present": 5.8,
+     "near": 5.8,
+     "farLow": 6.7,
+     "farHigh": 20.8
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 1.6
+    },
+    "freezing": {
+     "past": 154.6,
+     "present": 141.7,
+     "near": 131.0,
+     "farLow": 123.7,
+     "farHigh": 108.6
+    }
+   }
+  },
+  "naha": {
+   "name": "Naha",
+   "country": "Japan",
+   "lat": 26.21,
+   "lon": 127.68,
+   "metrics": {
+    "hot-days": {
+     "past": 3.1,
+     "present": 49.6,
+     "near": 63.3,
+     "farLow": 105.2,
+     "farHigh": 155.5
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 87.8,
+     "present": 96.0,
+     "near": 110.3,
+     "farLow": 130.1,
+     "farHigh": 154.6
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "taipei": {
+   "name": "Taipei",
+   "country": "Taiwan",
+   "lat": 25.03,
+   "lon": 121.56,
+   "metrics": {
+    "hot-days": {
+     "past": 69.5,
+     "present": 119.6,
+     "near": 133.2,
+     "farLow": 149.1,
+     "farHigh": 172.8
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 32.0,
+     "present": 33.7,
+     "near": 46.1,
+     "farLow": 76.0,
+     "farHigh": 125.1
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "hong-kong": {
+   "name": "Hong Kong",
+   "country": "Hong Kong",
+   "lat": 22.28,
+   "lon": 114.17,
+   "metrics": {
+    "hot-days": {
+     "past": 44.2,
+     "present": 62.9,
+     "near": 93.6,
+     "farLow": 123.9,
+     "farHigh": 163.4
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 61.6,
+     "present": 81.6,
+     "near": 105.0,
+     "farLow": 123.1,
+     "farHigh": 146.5
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "shanghai": {
+   "name": "Shanghai",
+   "country": "China",
+   "lat": 31.23,
+   "lon": 121.47,
+   "metrics": {
+    "hot-days": {
+     "past": 38.3,
+     "present": 65.0,
+     "near": 76.7,
+     "farLow": 89.6,
+     "farHigh": 108.2
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.9,
+     "near": 0.9,
+     "farLow": 0.9,
+     "farHigh": 0.9
+    },
+    "hot-nights": {
+     "past": 18.7,
+     "present": 32.4,
+     "near": 45.2,
+     "farLow": 57.3,
+     "farHigh": 76.0
+    },
+    "freezing": {
+     "past": 31.8,
+     "present": 22.5,
+     "near": 17.4,
+     "farLow": 14.6,
+     "farHigh": 12.9
+    }
+   }
+  },
+  "guangzhou": {
+   "name": "Guangzhou",
+   "country": "China",
+   "lat": 23.13,
+   "lon": 113.26,
+   "metrics": {
+    "hot-days": {
+     "past": 106.0,
+     "present": 135.3,
+     "near": 153.2,
+     "farLow": 171.4,
+     "farHigh": 196.8
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.4
+    },
+    "hot-nights": {
+     "past": 22.3,
+     "present": 53.8,
+     "near": 74.8,
+     "farLow": 95.4,
+     "farHigh": 127.1
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "chongqing": {
+   "name": "Chongqing",
+   "country": "China",
+   "lat": 29.56,
+   "lon": 106.55,
+   "metrics": {
+    "hot-days": {
+     "past": 62.5,
+     "present": 78.4,
+     "near": 93.5,
+     "farLow": 106.8,
+     "farHigh": 125.5
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 2.7,
+     "near": 3.5,
+     "farLow": 6.5,
+     "farHigh": 19.6
+    },
+    "hot-nights": {
+     "past": 9.7,
+     "present": 24.0,
+     "near": 38.9,
+     "farLow": 55.6,
+     "farHigh": 79.4
+    },
+    "freezing": {
+     "past": 2.0,
+     "present": 1.1,
+     "near": 1.1,
+     "farLow": 1.1,
+     "farHigh": 1.1
+    }
+   }
+  },
+  "singapore": {
+   "name": "Singapore",
+   "country": "Singapore",
+   "lat": 1.35,
+   "lon": 103.82,
+   "metrics": {
+    "hot-days": {
+     "past": 8.7,
+     "present": 129.3,
+     "near": 159.9,
+     "farLow": 255.6,
+     "farHigh": 365.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 34.2,
+     "present": 30.2,
+     "near": 101.6,
+     "farLow": 136.4,
+     "farHigh": 134.6
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "bangkok": {
+   "name": "Bangkok",
+   "country": "Thailand",
+   "lat": 13.75,
+   "lon": 100.5,
+   "metrics": {
+    "hot-days": {
+     "past": 300.0,
+     "present": 315.5,
+     "near": 322.5,
+     "farLow": 327.8,
+     "farHigh": 331.1
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 12.9
+    },
+    "hot-nights": {
+     "past": 73.9,
+     "present": 108.8,
+     "near": 140.7,
+     "farLow": 166.0,
+     "farHigh": 203.3
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "manila": {
+   "name": "Manila",
+   "country": "Philippines",
+   "lat": 14.6,
+   "lon": 120.98,
+   "metrics": {
+    "hot-days": {
+     "past": 137.9,
+     "present": 226.3,
+     "near": 261.4,
+     "farLow": 284.2,
+     "farHigh": 300.1
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 17.3,
+     "present": 66.7,
+     "near": 132.2,
+     "farLow": 178.5,
+     "farHigh": 230.4
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "davao": {
+   "name": "Davao City",
+   "country": "Philippines",
+   "lat": 7.19,
+   "lon": 125.61,
+   "metrics": {
+    "hot-days": {
+     "past": 57.8,
+     "present": 169.6,
+     "near": 247.4,
+     "farLow": 316.2,
+     "farHigh": 365.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.2,
+     "near": 0.2,
+     "farLow": 1.4,
+     "farHigh": 104.8
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "jakarta": {
+   "name": "Jakarta",
+   "country": "Indonesia",
+   "lat": -6.21,
+   "lon": 106.85,
+   "metrics": {
+    "hot-days": {
+     "past": 104.1,
+     "present": 277.9,
+     "near": 309.7,
+     "farLow": 329.0,
+     "farHigh": 337.4
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.4,
+     "near": 6.1,
+     "farLow": 57.9,
+     "farHigh": 292.6
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "medan": {
+   "name": "Medan",
+   "country": "Indonesia",
+   "lat": 3.6,
+   "lon": 98.67,
+   "metrics": {
+    "hot-days": {
+     "past": 131.0,
+     "present": 160.6,
+     "near": 178.0,
+     "farLow": 186.9,
+     "farHigh": 189.1
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.1,
+     "near": 0.1,
+     "farLow": 0.8,
+     "farHigh": 68.4
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "makassar": {
+   "name": "Makassar",
+   "country": "Indonesia",
+   "lat": -5.15,
+   "lon": 119.43,
+   "metrics": {
+    "hot-days": {
+     "past": 35.8,
+     "present": 140.9,
+     "near": 188.4,
+     "farLow": 232.2,
+     "farHigh": 287.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.7,
+     "present": 6.2,
+     "near": 32.7,
+     "farLow": 100.5,
+     "farHigh": 265.8
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "jayapura": {
+   "name": "Jayapura",
+   "country": "Indonesia",
+   "lat": -2.53,
+   "lon": 140.72,
+   "metrics": {
+    "hot-days": {
+     "past": 46.5,
+     "present": 128.9,
+     "near": 187.7,
+     "farLow": 279.9,
+     "farHigh": 365.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.1,
+     "near": 0.1,
+     "farLow": 0.1,
+     "farHigh": 0.1
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.6,
+     "near": 118.0,
+     "farLow": 249.0,
+     "farHigh": 305.6
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "denpasar": {
+   "name": "Denpasar",
+   "country": "Indonesia",
+   "lat": -8.65,
+   "lon": 115.22,
+   "metrics": {
+    "hot-days": {
+     "past": 1.7,
+     "present": 45.8,
+     "near": 46.5,
+     "farLow": 65.7,
+     "farHigh": 241.6
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 2.7,
+     "present": 5.7,
+     "near": 88.8,
+     "farLow": 153.5,
+     "farHigh": 176.1
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "balikpapan": {
+   "name": "Balikpapan",
+   "country": "Indonesia",
+   "lat": -1.27,
+   "lon": 116.83,
+   "metrics": {
+    "hot-days": {
+     "past": 8.8,
+     "present": 69.9,
+     "near": 155.1,
+     "farLow": 231.1,
+     "farHigh": 280.2
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 4.8,
+     "present": 13.9,
+     "near": 129.3,
+     "farLow": 269.1,
+     "farHigh": 325.6
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "hanoi": {
+   "name": "Hanoi",
+   "country": "Vietnam",
+   "lat": 21.03,
+   "lon": 105.85,
+   "metrics": {
+    "hot-days": {
+     "past": 131.9,
+     "present": 156.2,
+     "near": 175.2,
+     "farLow": 192.0,
+     "farHigh": 216.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.1,
+     "near": 0.1,
+     "farLow": 0.1,
+     "farHigh": 9.4
+    },
+    "hot-nights": {
+     "past": 37.1,
+     "present": 65.2,
+     "near": 94.3,
+     "farLow": 115.4,
+     "farHigh": 142.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "ho-chi-minh-city": {
+   "name": "Ho Chi Minh City",
+   "country": "Vietnam",
+   "lat": 10.82,
+   "lon": 106.63,
+   "metrics": {
+    "hot-days": {
+     "past": 272.8,
+     "present": 314.7,
+     "near": 331.5,
+     "farLow": 341.6,
+     "farHigh": 345.9
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 9.6,
+     "present": 33.4,
+     "near": 116.5,
+     "farLow": 194.9,
+     "farHigh": 259.1
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "almaty": {
+   "name": "Almaty",
+   "country": "Kazakhstan",
+   "lat": 43.24,
+   "lon": 76.95,
+   "metrics": {
+    "hot-days": {
+     "past": 9.3,
+     "present": 32.4,
+     "near": 34.0,
+     "farLow": 38.6,
+     "farHigh": 65.7
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 155.9,
+     "present": 129.9,
+     "near": 120.7,
+     "farLow": 109.7,
+     "farHigh": 92.7
+    }
+   }
+  },
+  "tashkent": {
+   "name": "Tashkent",
+   "country": "Uzbekistan",
+   "lat": 41.3,
+   "lon": 69.24,
+   "metrics": {
+    "hot-days": {
+     "past": 95.3,
+     "present": 109.2,
+     "near": 119.3,
+     "farLow": 129.5,
+     "farHigh": 148.2
+    },
+    "danger-days": {
+     "past": 0.7,
+     "present": 8.6,
+     "near": 11.5,
+     "farLow": 16.6,
+     "farHigh": 48.7
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 3.4,
+     "near": 3.4,
+     "farLow": 3.4,
+     "farHigh": 15.8
+    },
+    "freezing": {
+     "past": 101.3,
+     "present": 79.0,
+     "near": 70.0,
+     "farLow": 59.6,
+     "farHigh": 47.2
+    }
+   }
+  },
+  "bishkek": {
+   "name": "Bishkek",
+   "country": "Kyrgyzstan",
+   "lat": 42.87,
+   "lon": 74.59,
+   "metrics": {
+    "hot-days": {
+     "past": 25.3,
+     "present": 45.4,
+     "near": 46.9,
+     "farLow": 49.9,
+     "farHigh": 76.4
+    },
+    "danger-days": {
+     "past": 0.1,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 145.5,
+     "present": 111.8,
+     "near": 100.5,
+     "farLow": 88.5,
+     "farHigh": 67.8
+    }
+   }
+  },
+  "dushanbe": {
+   "name": "Dushanbe",
+   "country": "Tajikistan",
+   "lat": 38.56,
+   "lon": 68.79,
+   "metrics": {
+    "hot-days": {
+     "past": 56.3,
+     "present": 98.1,
+     "near": 113.6,
+     "farLow": 129.2,
+     "farHigh": 160.9
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 3.1,
+     "near": 3.1,
+     "farLow": 3.1,
+     "farHigh": 4.0
+    },
+    "hot-nights": {
+     "past": 0.2,
+     "present": 0.5,
+     "near": 0.5,
+     "farLow": 0.5,
+     "farHigh": 0.5
+    },
+    "freezing": {
+     "past": 105.4,
+     "present": 63.9,
+     "near": 53.3,
+     "farLow": 41.9,
+     "farHigh": 24.2
+    }
+   }
+  },
+  "ashgabat": {
+   "name": "Ashgabat",
+   "country": "Turkmenistan",
+   "lat": 37.96,
+   "lon": 58.33,
+   "metrics": {
+    "hot-days": {
+     "past": 109.6,
+     "present": 127.4,
+     "near": 137.8,
+     "farLow": 148.6,
+     "farHigh": 168.3
+    },
+    "danger-days": {
+     "past": 3.0,
+     "present": 17.2,
+     "near": 22.0,
+     "farLow": 29.5,
+     "farHigh": 64.5
+    },
+    "hot-nights": {
+     "past": 11.5,
+     "present": 44.6,
+     "near": 56.4,
+     "farLow": 72.9,
+     "farHigh": 112.9
+    },
+    "freezing": {
+     "past": 63.7,
+     "present": 32.0,
+     "near": 25.3,
+     "farLow": 16.4,
+     "farHigh": 3.6
+    }
+   }
+  },
+  "kabul": {
+   "name": "Kabul",
+   "country": "Afghanistan",
+   "lat": 34.53,
+   "lon": 69.18,
+   "metrics": {
+    "hot-days": {
+     "past": 67.2,
+     "present": 78.2,
+     "near": 94.0,
+     "farLow": 111.7,
+     "farHigh": 143.4
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 107.4,
+     "present": 106.6,
+     "near": 98.1,
+     "farLow": 86.8,
+     "farHigh": 69.0
+    }
+   }
+  },
+  "auckland": {
+   "name": "Auckland",
+   "country": "New Zealand",
+   "lat": -36.85,
+   "lon": 174.76,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "sydney": {
+   "name": "Sydney",
+   "country": "Australia",
+   "lat": -33.87,
+   "lon": 151.21,
+   "metrics": {
+    "hot-days": {
+     "past": 8.2,
+     "present": 17.8,
+     "near": 20.0,
+     "farLow": 22.7,
+     "farHigh": 34.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.4,
+     "near": 0.4,
+     "farLow": 0.4,
+     "farHigh": 0.4
+    },
+    "hot-nights": {
+     "past": 0.1,
+     "present": 0.1,
+     "near": 0.9,
+     "farLow": 2.7,
+     "farHigh": 10.3
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "alice-springs": {
+   "name": "Alice Springs",
+   "country": "Australia",
+   "lat": -23.7,
+   "lon": 133.88,
+   "metrics": {
+    "hot-days": {
+     "past": 165.0,
+     "present": 179.9,
+     "near": 192.3,
+     "farLow": 207.1,
+     "farHigh": 234.2
+    },
+    "danger-days": {
+     "past": 11.0,
+     "present": 15.2,
+     "near": 27.8,
+     "farLow": 43.6,
+     "farHigh": 75.8
+    },
+    "hot-nights": {
+     "past": 14.0,
+     "present": 17.6,
+     "near": 28.6,
+     "farLow": 43.9,
+     "farHigh": 82.3
+    },
+    "freezing": {
+     "past": 0.9,
+     "present": 0.5,
+     "near": 0.5,
+     "farLow": 0.5,
+     "farHigh": 0.5
+    }
+   }
+  },
+  "perth": {
+   "name": "Perth",
+   "country": "Australia",
+   "lat": -31.95,
+   "lon": 115.86,
+   "metrics": {
+    "hot-days": {
+     "past": 69.0,
+     "present": 62.1,
+     "near": 73.1,
+     "farLow": 84.7,
+     "farHigh": 113.0
+    },
+    "danger-days": {
+     "past": 2.4,
+     "present": 1.5,
+     "near": 1.5,
+     "farLow": 1.5,
+     "farHigh": 1.5
+    },
+    "hot-nights": {
+     "past": 1.9,
+     "present": 1.1,
+     "near": 2.0,
+     "farLow": 3.3,
+     "farHigh": 10.2
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "hobart": {
+   "name": "Hobart",
+   "country": "Australia",
+   "lat": -42.88,
+   "lon": 147.33,
+   "metrics": {
+    "hot-days": {
+     "past": 3.6,
+     "present": 5.5,
+     "near": 5.5,
+     "farLow": 5.5,
+     "farHigh": 6.6
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.2,
+     "near": 0.2,
+     "farLow": 0.2,
+     "farHigh": 0.2
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 1.1,
+     "present": 0.3,
+     "near": 0.3,
+     "farLow": 0.3,
+     "farHigh": 0.3
+    }
+   }
+  },
+  "darwin": {
+   "name": "Darwin",
+   "country": "Australia",
+   "lat": -12.46,
+   "lon": 130.84,
+   "metrics": {
+    "hot-days": {
+     "past": 298.3,
+     "present": 255.9,
+     "near": 268.7,
+     "farLow": 274.5,
+     "farHigh": 277.9
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 53.8,
+     "present": 115.0,
+     "near": 169.9,
+     "farLow": 217.6,
+     "farHigh": 275.1
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "port-moresby": {
+   "name": "Port Moresby",
+   "country": "Papua New Guinea",
+   "lat": -9.48,
+   "lon": 147.18,
+   "metrics": {
+    "hot-days": {
+     "past": 153.7,
+     "present": 160.4,
+     "near": 220.3,
+     "farLow": 309.9,
+     "farHigh": 365.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.2,
+     "present": 1.7,
+     "near": 4.4,
+     "farLow": 49.8,
+     "farHigh": 219.9
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "suva": {
+   "name": "Suva",
+   "country": "Fiji",
+   "lat": -18.14,
+   "lon": 178.44,
+   "metrics": {
+    "hot-days": {
+     "past": 4.6,
+     "present": 32.9,
+     "near": 32.9,
+     "farLow": 34.8,
+     "farHigh": 96.2
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.4,
+     "present": 1.6,
+     "near": 49.6,
+     "farLow": 102.3,
+     "farHigh": 177.1
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "majuro": {
+   "name": "Majuro",
+   "country": "Marshall Islands",
+   "lat": 7.1,
+   "lon": 171.38,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 1.6,
+     "near": 1.6,
+     "farLow": 19.0,
+     "farHigh": 321.2
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 154.8,
+     "present": 282.4,
+     "near": 327.3,
+     "farLow": 334.6,
+     "farHigh": 328.5
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "tarawa": {
+   "name": "Tarawa",
+   "country": "Kiribati",
+   "lat": 1.33,
+   "lon": 172.98,
+   "metrics": {
+    "hot-days": {
+     "past": 0.2,
+     "present": 6.2,
+     "near": 7.8,
+     "farLow": 77.7,
+     "farHigh": 345.8
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 191.8,
+     "present": 317.7,
+     "near": 359.2,
+     "farLow": 365.0,
+     "farHigh": 351.7
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "funafuti": {
+   "name": "Funafuti",
+   "country": "Tuvalu",
+   "lat": -8.52,
+   "lon": 179.22,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 12.9,
+     "near": 17.0,
+     "farLow": 92.9,
+     "farHigh": 353.1
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 205.8,
+     "present": 302.8,
+     "near": 333.5,
+     "farLow": 339.2,
+     "farHigh": 337.0
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "hagatna": {
+   "name": "Hagåtña",
+   "country": "Guam",
+   "lat": 13.48,
+   "lon": 144.75,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 136.3,
+     "near": 136.5,
+     "farLow": 168.6,
+     "farHigh": 365.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 169.0,
+     "present": 78.3,
+     "near": 119.9,
+     "farLow": 127.0,
+     "farHigh": 124.1
+    },
+    "freezing": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    }
+   }
+  },
+  "macquarie-island": {
+   "name": "Macquarie Island",
+   "country": "Australia",
+   "lat": -54.5,
+   "lon": 158.9,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 13.4,
+     "present": 13.4,
+     "near": 10.6,
+     "farLow": 6.5,
+     "farHigh": 3.6
+    }
+   }
+  },
+  "nuuk": {
+   "name": "Nuuk",
+   "country": "Greenland",
+   "lat": 64.18,
+   "lon": -51.72,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 252.1,
+     "present": 243.7,
+     "near": 238.4,
+     "farLow": 226.6,
+     "farHigh": 209.5
+    }
+   }
+  },
+  "villa-las-estrellas": {
+   "name": "Villa Las Estrellas",
+   "country": "Antarctica",
+   "lat": -62.2,
+   "lon": -58.9,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 290.8,
+     "present": 298.6,
+     "near": 280.4,
+     "farLow": 263.1,
+     "farHigh": 227.4
+    }
+   }
+  },
+  "grytviken": {
+   "name": "Grytviken",
+   "country": "South Georgia",
+   "lat": -54.28,
+   "lon": -36.5,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 247.6,
+     "present": 225.2,
+     "near": 211.8,
+     "farLow": 192.8,
+     "farHigh": 152.3
+    }
+   }
+  },
+  "esperanza": {
+   "name": "Esperanza Base",
+   "country": "Antarctica",
+   "lat": -63.4,
+   "lon": -56.997,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 345.1,
+     "present": 340.5,
+     "near": 334.0,
+     "farLow": 327.9,
+     "farHigh": 313.7
+    }
+   }
+  },
+  "mcmurdo": {
+   "name": "McMurdo Station",
+   "country": "Antarctica",
+   "lat": -77.85,
+   "lon": 166.67,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 365.3,
+     "present": 365.3,
+     "near": 365.0,
+     "farLow": 365.0,
+     "farHigh": 365.0
+    }
+   }
+  },
+  "south-pole": {
+   "name": "Amundsen-Scott South Pole Station",
+   "country": "Antarctica",
+   "lat": -90.0,
+   "lon": 0.0,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 365.3,
+     "present": 365.3,
+     "near": 365.0,
+     "farLow": 365.0,
+     "farHigh": 365.0
+    }
+   }
+  },
+  "stanley": {
+   "name": "Stanley",
+   "country": "Falkland Islands",
+   "lat": -51.7,
+   "lon": -57.85,
+   "metrics": {
+    "hot-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "danger-days": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "hot-nights": {
+     "past": 0.0,
+     "present": 0.0,
+     "near": 0.0,
+     "farLow": 0.0,
+     "farHigh": 0.0
+    },
+    "freezing": {
+     "past": 26.1,
+     "present": 23.8,
+     "near": 22.1,
+     "farLow": 21.1,
+     "farHigh": 20.1
+    }
+   }
+  }
+ },
+ "meta": {
+  "metricDefs": {
+   "hot-days": {
+    "label": "Hot days",
+    "cckp": "hd30",
+    "op": ">=",
+    "threshold": 30
+   },
+   "danger-days": {
+    "label": "Dangerous heat",
+    "cckp": "hd40",
+    "op": ">=",
+    "threshold": 40
+   },
+   "hot-nights": {
+    "label": "Hot nights",
+    "cckp": "tr26",
+    "op": ">=",
+    "threshold": 26
+   },
+   "freezing": {
+    "label": "Freezing days",
+    "cckp": "fd",
+    "op": "<",
+    "threshold": 0
+   }
+  },
+  "windows": {
+   "past": "1980-1989 observed",
+   "present": "2015-2024 observed",
+   "near": "2040-2049 modeled (SSP2-4.5)",
+   "farLow": "2076-2085 modeled (SSP2-4.5)",
+   "farHigh": "2076-2085 modeled (SSP5-8.5)"
+  },
+  "sources": {
+   "observed": "Open-Meteo Historical Archive (ERA5), city point",
+   "projected": "World Bank CCKP, CMIP6 0.25° median ensemble, nearest grid cell; delta-method bias correction vs model 2015-2024 baseline, clamped to [0, 365]"
+  },
+  "generated": "2026-07-24"
+ }
+}

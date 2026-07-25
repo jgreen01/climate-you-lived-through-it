@@ -13,7 +13,7 @@ TOPOJSON_URL   = https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-cl
 # world-atlas basemap (Natural Earth as TopoJSON): https://github.com/topojson/world-atlas  (npm: world-atlas)
 WORLDATLAS_URL = https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json
 
-.PHONY: serve vendor test test-setup deploy data clean-vendor
+.PHONY: serve vendor test test-setup data clean-vendor
 
 ## data: pre-bake heat data (downloads ~1.4GB NetCDF once into data/raw/)
 data: .venv/bin/python
@@ -46,14 +46,6 @@ test-setup:
 ## test: run the Playwright test suite (starts its own server)
 test:
 	npx playwright test
-
-## deploy: publish the site to static hosting (STUB: fill in once hosting is chosen)
-# Site is fully static: index.html, css/, js/, data/ are everything that ships.
-# Options: GitHub Pages (git push), rsync to a server, S3 sync, Netlify, etc.
-deploy:
-	@echo "TODO: deploy stub - choose static hosting and implement."
-	@echo "Files to publish: index.html css/ js/ data/"
-	@exit 1
 
 clean-vendor:
 	rm -f js/lib/*.js

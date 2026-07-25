@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CS416 narrative visualization: an interactive data story built with D3.js">
+  <title>CS416 Narrative Visualization</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Vendored libraries (assignment-allowed: d3, d3-annotation, topojson-client) -->
+  <script src="js/lib/d3.v7.min.js"></script>
+  <script src="js/lib/d3-annotation.min.js"></script>
+  <script src="js/lib/topojson-client.min.js"></script>
+</head>
+<body>
+  <main id="viz-container">
+    <header>
+      <h1 id="scene-title">Narrative Visualization</h1>
+      <p id="scene-subtitle"></p>
+    </header>
+    <div id="metric-bar" role="group" aria-label="Choose which extreme-weather day to view"></div>
+    <div id="chart-box">
+      <div id="map-controls" hidden aria-label="Map legend and controls"></div>
+      <svg id="chart" viewBox="0 0 960 540" role="img" aria-label="Data visualization"></svg>
+      <div id="map-tooltip" hidden role="status"></div>
+      <label id="city-select-label">
+        <span class="city-select-caption">City</span>
+        <select id="city-select" aria-label="Choose a city"></select>
+      </label>
+    </div>
+    <nav id="scene-nav" aria-label="Scene navigation">
+      <button id="btn-prev" type="button">&larr; Back</button>
+      <div id="scene-breadcrumbs" role="group" aria-label="Jump to a scene"></div>
+      <button id="btn-next" type="button">Next &rarr;</button>
+    </nav>
+  </main>
+  <footer>
+    <p id="attribution">
+      * 1980–2024 is measured, not modeled. Years beyond 2024 are modeled
+      using CMIP6 climate projections, bias-corrected against observed
+      data. "Around 2045" and "the 2080s" are decade averages
+      (2040–2049 and 2076–2085), not single-year forecasts.
+    </p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

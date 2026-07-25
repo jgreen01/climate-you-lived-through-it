@@ -1,0 +1,224 @@
+/* ===== Scene template: consistent look across all scenes ===== */
+:root {
+  --bg: #fafafa;
+  --fg: #1a1a1a;
+  --muted: #6b6b6b;
+  --accent: #c0392b;
+  --font: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#viz-container {
+  width: min(1000px, 96vw);
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1.6rem;
+}
+
+#scene-subtitle {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+}
+
+#chart-box {
+  position: relative;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+#chart {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#scene-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+#scene-nav button {
+  font: inherit;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--muted);
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+
+#scene-nav button:hover:not(:disabled) { background: #eee; }
+#scene-nav button:disabled { opacity: 0.4; cursor: default; }
+
+#scene-breadcrumbs { display: flex; align-items: center; gap: 0.5rem; }
+#scene-nav .breadcrumb-dot {
+  width: 10px; height: 10px; padding: 0; border: none; border-radius: 50%;
+  background: #ddd;
+}
+#scene-nav .breadcrumb-dot:hover { background: #bbb; }
+#scene-nav .breadcrumb-active { background: var(--accent); }
+#scene-nav .breadcrumb-active:hover { background: var(--accent); }
+
+/* d3-annotation template styling */
+.annotation-note-title { font-weight: 600; }
+.annotation-note-label { fill: var(--muted); }
+
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+footer #attribution { max-width: 40rem; text-align: center; line-height: 1.5; }
+
+/* ===== Waffle Year ===== */
+.waffle-label { font-size: 15px; font-weight: 600; fill: var(--fg); }
+.waffle-sublabel { font-size: 12px; fill: var(--muted); }
+.waffle-count { font-size: 18px; font-weight: 700; fill: var(--accent); }
+
+/* ===== Map (Scene 4) ===== */
+.sphere { fill: #eef2f5; stroke: #d5dbe0; stroke-width: 0.5; }
+/* halo (black ring + white ring) behind every dot, so it reads on any
+   background color, light or dark */
+.city-halo-black { fill: #000; }
+.city-halo-white { fill: #fff; }
+.city { stroke: none; }
+.city-selected { stroke: none; }
+
+/* map overlays */
+.country-outline { fill: none; stroke: #7a7a7a; stroke-width: 0.5; }
+.contour { stroke: none; }
+.land-outline { fill: none; stroke: #4a4a4a; stroke-width: 0.9; stroke-linejoin: round; }
+
+/* magnifying-glass lens: a zoomed live copy of the map, purely visual */
+.map-lens { pointer-events: none; }
+.map-lens-ring {
+  fill: none; stroke: #1a1a1a; stroke-width: 1.5;
+  pointer-events: none; filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.3));
+}
+
+/* map legend + toggles: an HTML control row above the map graphic itself */
+#map-controls {
+  display: flex; align-items: flex-start; flex-wrap: wrap;
+  justify-content: space-between; gap: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+#map-controls[hidden] { display: none; }
+
+.map-legend-title { font-size: 13px; font-weight: 700; color: var(--fg); margin: 0; }
+.map-legend-sub { font-size: 11.5px; color: var(--muted); margin: 2px 0 6px; }
+.map-legend-bar { width: 240px; height: 18px; border-radius: 3px; border: 1px solid #bbb; }
+.map-legend-ticks {
+  display: flex; justify-content: space-between; width: 240px;
+  font-size: 12px; font-weight: 600; color: var(--fg); margin-top: 3px;
+}
+
+/* "Change since" drives the whole map's meaning, so its buttons are pills. */
+.baseline-toggle { display: flex; align-items: center; }
+.baseline-toggle .map-toggle-label {
+  font-size: 14px; font-weight: 600; color: var(--fg); margin-right: 0.5rem;
+}
+.baseline-toggle .map-toggle-btn {
+  font: inherit; font-size: 0.9rem; font-weight: 600; color: var(--fg);
+  border: 1px solid #ddd; border-radius: 20px;
+  padding: 0.3rem 0.9rem; margin-left: 6px;
+  background: #fff; cursor: pointer;
+}
+.baseline-toggle .map-toggle-btn:hover { background: #dcdcdc; border-color: #bbb; }
+.baseline-toggle .map-toggle-active {
+  background: var(--accent); color: #fff; border-color: var(--accent);
+}
+.baseline-toggle .map-toggle-active:hover { background: #a53125; border-color: #a53125; }
+
+/* line chart (Scene 4) */
+.linechart .grid { stroke: #e8e6e1; stroke-width: 1; }
+.axis-label { font-size: 12px; fill: var(--muted); }
+.axis-title { font-size: 11px; fill: var(--muted); }
+.line-shared { fill: none; stroke: #1a1a1a; stroke-width: 2.5; }
+.line-fork { fill: none; stroke-width: 2.5; }
+.choice-gap { fill: #b0207010; }
+.pt { fill: #1a1a1a; }
+.end-title { font-size: 13px; font-weight: 700; }
+.end-sub { font-size: 11px; fill: var(--muted); }
+
+/* metric selector bar: real tabs, attached to the top edge of the chart box */
+#metric-bar {
+  display: flex; gap: 0.2rem; flex-wrap: wrap;
+  margin: 0.5rem 0 0;
+  position: relative;
+}
+.metric-btn {
+  font: inherit; font-size: 0.9rem; padding: 0.5rem 1rem 0.45rem; cursor: pointer;
+  background: #ececec; color: var(--muted);
+  border: 1px solid #e0e0e0; border-bottom: none; border-top-width: 3px;
+  border-radius: 6px 6px 0 0;
+  position: relative;
+  top: 1px; /* sit flush on the chart box's top border */
+}
+.metric-btn:hover { background: #f5f5f5; }
+.metric-active {
+  background: #fff; color: var(--fg); font-weight: 700;
+  z-index: 1;
+}
+
+/* map hover tooltip: follows the cursor over a city dot */
+#map-tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  transform: translate(-50%, -100%);
+  z-index: 2;
+}
+#map-tooltip[hidden] { display: none; }
+#map-tooltip strong { font-weight: 700; }
+
+/* city selector: floats inside the chart box, top-left corner */
+#city-select-label {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+#city-select-label[hidden] { display: none; }
+.city-select-caption {
+  font-size: 0.8rem; font-weight: 600; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 0.03em;
+}
+#city-select {
+  font: inherit; font-size: 0.9rem; padding: 0.35rem 1.6rem 0.35rem 0.6rem; cursor: pointer;
+  background: #fff; border: 1px solid #ddd; border-radius: 4px;
+  color: var(--fg); min-width: 10rem;
+}
+#city-select:hover { background: #f2f2f2; }
+#city-select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }

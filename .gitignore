@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+.venv/
+
+# Python
+__pycache__/
+
+# Baked-data source: ~2.8 GB of NetCDF downloads + observed cache (regenerate
+# with `make data`). The committed outputs data/heat.json + data/heat-grid.json
+# are NOT ignored.
+data/raw/
+
+# Test + tooling artifacts
+test-results/
+playwright-report/
+.playwright-mcp/
+
+# OS junk
+.DS_Store

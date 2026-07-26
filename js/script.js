@@ -714,8 +714,8 @@ function buildMetricBar() {
     .join("button")
     .attr("type", "button")
     .attr("class", (m) => `metric-btn${m === state.metric ? " metric-active" : ""}`)
-    .style("border-top-color", (m) =>
-      m === state.metric ? METRIC_META[m].accent : "#e0e0e0"
+    .style("--metric-accent", (m) =>
+      m === state.metric ? METRIC_META[m].accent : null
     )
     .text((m) => METRIC_META[m].label)
     .on("click", (event, m) => {

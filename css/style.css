@@ -176,24 +176,25 @@ footer #attribution { max-width: 40rem; text-align: center; line-height: 1.5; }
 .end-title { font-size: 13px; font-weight: 700; }
 .end-sub { font-size: 11px; fill: var(--muted); }
 
-/* metric selector bar: real tabs, attached to the top edge of the chart box */
+/* metric selector: a group of segment buttons above the chart. Wraps to more
+   rows on narrow screens (flex-wrap, no media query); each button reads the
+   same whether it is on the first row or a wrapped one. */
 #metric-bar {
-  display: flex; gap: 0.2rem; flex-wrap: wrap;
-  margin: 0.5rem 0 0;
-  position: relative;
+  display: flex; flex-wrap: wrap; gap: 0.4rem;
+  margin: 0.5rem 0 0.6rem;
 }
 .metric-btn {
-  font: inherit; font-size: 0.9rem; padding: 0.5rem 1rem 0.45rem; cursor: pointer;
+  font: inherit; font-size: 0.9rem; padding: 0.45rem 1rem; cursor: pointer;
   background: #ececec; color: var(--muted);
-  border: 1px solid #e0e0e0; border-bottom: none; border-top-width: 3px;
-  border-radius: 6px 6px 0 0;
-  position: relative;
-  top: 1px; /* sit flush on the chart box's top border */
+  border: 1px solid #e0e0e0; border-radius: 6px;
 }
-.metric-btn:hover { background: #f5f5f5; }
+.metric-btn:hover { background: #e2e2e2; color: var(--fg); }
 .metric-active {
   background: #fff; color: var(--fg); font-weight: 700;
-  z-index: 1;
+  /* 3px accent underline (color set inline per metric) keeps the color cue the
+     old tabs had; inset shadow avoids any layout shift on selection. */
+  box-shadow: inset 0 -3px 0 var(--metric-accent, var(--accent)),
+              0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 /* map hover tooltip: follows the cursor over a city dot */

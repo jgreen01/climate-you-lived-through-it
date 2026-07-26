@@ -48,6 +48,22 @@ header h1 {
   height: auto;
 }
 
+/* Waffle scenes: two waffle charts that sit side by side when there is room
+   and wrap to a single stacked column on narrow screens, via flex-wrap (no
+   media query). Each waffle is its own viewBox-scaled <svg>. */
+#waffle-pair {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.25rem 2rem;
+  padding: 1.5rem 1rem;
+}
+.waffle-svg { flex: 1 1 240px; max-width: 380px; height: auto; }
+
+/* only one chart surface shows per scene */
+#chart[hidden], #waffle-pair[hidden] { display: none; }
+
 #scene-nav {
   display: flex;
   align-items: center;
@@ -198,27 +214,27 @@ footer #attribution { max-width: 40rem; text-align: center; line-height: 1.5; }
 #map-tooltip[hidden] { display: none; }
 #map-tooltip strong { font-weight: 700; }
 
-/* city selector: floats inside the chart box, top-left corner */
+/* city selector: a control row at the top of the chart box, shown on the story
+   scenes (the map scene shows #map-controls in the same spot instead). */
 #city-select-label {
-  position: absolute;
-  top: 14px;
-  left: 14px;
-  display: inline-flex; align-items: center; gap: 0.5rem;
-  padding: 0.3rem 0.5rem;
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex; align-items: center; gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
 }
 #city-select-label[hidden] { display: none; }
 .city-select-caption {
+  flex: none; /* keep the CITY caption from shrinking */
   font-size: 0.8rem; font-weight: 600; color: var(--muted);
   text-transform: uppercase; letter-spacing: 0.03em;
 }
 #city-select {
   font: inherit; font-size: 0.9rem; padding: 0.35rem 1.6rem 0.35rem 0.6rem; cursor: pointer;
   background: #fff; border: 1px solid #ddd; border-radius: 4px;
-  color: var(--fg); min-width: 10rem;
+  color: var(--fg);
+  /* shrink to fit the row on narrow screens, truncating a long name rather
+     than overflowing. */
+  min-width: 0; max-width: 100%;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 #city-select:hover { background: #f2f2f2; }
 #city-select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }

@@ -51,13 +51,18 @@ WAFFLE.height = WAFFLE.rows * (WAFFLE.cell + WAFFLE.gap);
 
 const COLOR_COOL = "#e8e6e1"; // grey squares (days that don't meet the metric)
 
-// Draw one waffle year into `parent` (a d3 <svg>/<g> selection).
-// cfg: { x, y, days, label, sublabel }
-function drawWaffle(parent, cfg) {
-  const g = parent
+// Draw one waffle year as its own <svg> appended to `container` (a d3 HTML
+// selection). Each waffle is a self-contained, viewBox-scaled chart so the
+// flex container can lay two out side by side or stack them (see #waffle-pair).
+// cfg: { days, label, sublabel }
+function drawWaffle(container, cfg) {
+  const g = container
+    .append("svg")
+    .attr("class", "waffle-svg")
+    .attr("viewBox", `0 0 ${WAFFLE.width} ${WAFFLE.height + 50}`) // +50 for labels below
+    .attr("role", "img")
     .append("g")
-    .attr("class", "waffle")
-    .attr("transform", `translate(${cfg.x},${cfg.y})`);
+    .attr("class", "waffle");
 
   const hot = Math.round(cfg.days);
   const squares = d3.range(365).map((i) => ({
@@ -129,6 +134,7 @@ const metricBar = d3.select("#metric-bar");
 const citySelect = d3.select("#city-select");
 const citySelectLabel = d3.select("#city-select-label");
 const mapControls = d3.select("#map-controls");
+const wafflePair = d3.select("#waffle-pair");
 
 // Map hover tooltip: positioned in HTML pixel space (not SVG viewBox units),
 // so it tracks the cursor correctly at any zoom/scale of the SVG.
@@ -140,23 +146,17 @@ function moveMapTooltip(event) {
     .style("left", `${event.clientX - rect.left}px`)
     .style("top", `${event.clientY - rect.top - 12}px`);
 }
-const PAIR_GAP = 90; // gap between two side-by-side waffles
-
-// x positions for a centered pair of waffles
-const PAIR_LEFT_X = (WIDTH - (2 * WAFFLE.width + PAIR_GAP)) / 2;
-const PAIR_RIGHT_X = PAIR_LEFT_X + WAFFLE.width + PAIR_GAP;
-const PAIR_Y = 90;
-
 function sceneTitleBlock(title, subtitle) {
   sceneTitle.text(title);
   sceneSubtitle.text(subtitle);
 }
 
-// Draw a centered pair of waffles. `left`/`right` are drawWaffle configs
-// without x/y (those come from the shared centered layout).
+// Draw the two waffles into the flex container. It lays them side by side when
+// there is room and wraps to a stacked column on narrow screens (see the
+// #waffle-pair CSS); each waffle scales itself, so no coordinates are needed.
 function drawWafflePair(left, right) {
-  drawWaffle(svg, { x: PAIR_LEFT_X, y: PAIR_Y, ...left });
-  drawWaffle(svg, { x: PAIR_RIGHT_X, y: PAIR_Y, ...right });
+  drawWaffle(wafflePair, left);
+  drawWaffle(wafflePair, right);
 }
 
 // Scene: 1980s vs. now (the change already lived through).
@@ -626,17 +626,20 @@ function drawBaselineToggle(parent) {
 //           ("Back to the next 20 years", "See the 2080 fork")
 // The measured-vs-modeled footnote is static (same on every scene); see the
 // page <footer>.
+// `waffle: true` scenes render into the #waffle-pair flex container; the rest
+// (map, century line) render into the single #chart svg.
 const SCENES = [
   { draw: drawMap, short: "Map", dest: "the map" },
-  { draw: drawThenNow, short: "1980s vs. now", dest: "1980s vs. now" },
-  { draw: drawLockedIn, short: "Next 20 years", dest: "the next 20 years" },
-  { draw: drawTwoFutures, short: "Two 2080 futures", dest: "the 2080 fork" },
+  { draw: drawThenNow, short: "1980s vs. now", dest: "1980s vs. now", waffle: true },
+  { draw: drawLockedIn, short: "Next 20 years", dest: "the next 20 years", waffle: true },
+  { draw: drawTwoFutures, short: "Two 2080 futures", dest: "the 2080 fork", waffle: true },
   { draw: drawCentury, short: "The century ahead", dest: "the century view" },
 ];
 
 // Clear-and-repopulate scene pattern
 function renderScene() {
   svg.selectAll("*").remove();
+  wafflePair.selectAll("*").remove();
   mapTooltip.property("hidden", true);
   btnPrev
     .property("disabled", state.scene === 0)
@@ -658,6 +661,12 @@ function renderScene() {
   citySelect.property("value", state.city);
   // the legend + toggles only apply to the map (scene 0)
   mapControls.property("hidden", state.scene !== 0);
+  // waffle scenes use the flex container; map + line use the single svg.
+  // Toggle the `hidden` attribute (not the property) so it works on the svg,
+  // which does not reflect the HTML `hidden` IDL property.
+  const usesWaffle = !!SCENES[state.scene].waffle;
+  svg.attr("hidden", usesWaffle ? "" : null);
+  wafflePair.attr("hidden", usesWaffle ? null : "");
   SCENES[state.scene].draw();
 }
 

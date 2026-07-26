@@ -213,9 +213,19 @@ function drawCentury() {
     `One shared past, two possible futures. The whole century for ${c.name}, in one line.`
   );
 
-  const M = { top: 70, right: 150, bottom: 55, left: 60 };
-  const x = d3.scaleLinear([1980, 2085], [M.left, WIDTH - M.right]);
-  const y = d3.scaleLinear([0, 365], [HEIGHT - M.bottom, M.top]);
+  // Responsive: size the chart to its real pixels (rather than scaling a fixed
+  // viewBox down) so the text stays legible and the plot reflows to the width.
+  const W = Math.round(svg.node().getBoundingClientRect().width) || WIDTH;
+  const H = Math.round(Math.min(Math.max(W * 0.6, 300), 520));
+  const narrow = W < 560;
+  svg.attr("viewBox", `0 0 ${W} ${H}`);
+
+  // Wide screens have room to label the two endpoints to the right of the fork;
+  // narrow ones do not, so the right margin shrinks and those labels move into a
+  // compact legend inside the plot (see below).
+  const M = { top: 44, right: narrow ? 18 : 150, bottom: 42, left: 52 };
+  const x = d3.scaleLinear([1980, narrow ? 2082 : 2085], [M.left, W - M.right]);
+  const y = d3.scaleLinear([0, 365], [H - M.bottom, M.top]);
 
   const line = d3
     .line()
@@ -239,7 +249,7 @@ function drawCentury() {
     .join("line")
     .attr("class", "grid")
     .attr("x1", M.left)
-    .attr("x2", WIDTH - M.right)
+    .attr("x2", W - M.right)
     .attr("y1", (d) => y(d))
     .attr("y2", (d) => y(d));
   g.selectAll("text.ytick")
@@ -253,7 +263,7 @@ function drawCentury() {
   g.append("text")
     .attr("class", "axis-title")
     .attr("x", M.left - 40)
-    .attr("y", M.top - 22)
+    .attr("y", M.top - 16)
     .text(`${meta().noun} / year`);
 
   // x axis labels
@@ -261,7 +271,7 @@ function drawCentury() {
     g.append("text")
       .attr("class", "axis-label")
       .attr("x", x(e.year))
-      .attr("y", HEIGHT - M.bottom + 20)
+      .attr("y", H - M.bottom + 18)
       .attr("text-anchor", "middle")
       .text(e.label);
   });
@@ -297,27 +307,52 @@ function drawCentury() {
     .attr("cy", (d) => y(d[1]))
     .attr("r", 4);
 
-  // endpoint labels
-  const endLabel = (pts, color, title, sub) => {
-    const [yr, val] = pts[1];
-    const gg = g
-      .append("g")
-      .attr("transform", `translate(${x(yr) + 10},${y(val)})`);
-    gg.append("circle").attr("r", 5).attr("fill", color);
-    gg.append("text")
-      .attr("class", "end-title")
-      .attr("x", 10)
-      .attr("y", -2)
-      .attr("fill", color)
-      .text(`${title}: ${Math.round(val)} days`);
-    gg.append("text")
-      .attr("class", "end-sub")
-      .attr("x", 10)
-      .attr("y", 13)
-      .text(sub);
-  };
-  endLabel(highPts, highColor, "If we don't act", "high emissions");
-  endLabel(lowPts, lowColor, "If we act", "low emissions");
+  // Endpoints: a marker at each 2080 value, plus a label.
+  const endpoints = [
+    [highPts, highColor, "If we don't act", "high emissions"],
+    [lowPts, lowColor, "If we act", "low emissions"],
+  ];
+  if (narrow) {
+    // No room for labels to the right, so put them in a compact legend where the
+    // line leaves space: upper-left for rising metrics, lower-left for freezing
+    // (which starts high and falls).
+    const legendY = meta().dir === "down" ? H - M.bottom - 34 : M.top + 8;
+    endpoints.forEach(([pts, color, title], i) => {
+      const [yr, val] = pts[1];
+      g.append("circle")
+        .attr("class", "pt")
+        .attr("cx", x(yr))
+        .attr("cy", y(val))
+        .attr("r", 4)
+        .attr("fill", color);
+      const row = g
+        .append("g")
+        .attr("transform", `translate(${M.left + 6},${legendY + i * 20})`);
+      row.append("circle").attr("r", 4).attr("fill", color);
+      row
+        .append("text")
+        .attr("class", "end-title")
+        .attr("x", 11)
+        .attr("y", 4)
+        .attr("fill", color)
+        .text(`${title}: ${Math.round(val)} days`);
+    });
+  } else {
+    endpoints.forEach(([pts, color, title, sub]) => {
+      const [yr, val] = pts[1];
+      const gg = g
+        .append("g")
+        .attr("transform", `translate(${x(yr) + 10},${y(val)})`);
+      gg.append("circle").attr("r", 5).attr("fill", color);
+      gg.append("text")
+        .attr("class", "end-title")
+        .attr("x", 10)
+        .attr("y", -2)
+        .attr("fill", color)
+        .text(`${title}: ${Math.round(val)} days`);
+      gg.append("text").attr("class", "end-sub").attr("x", 10).attr("y", 13).text(sub);
+    });
+  }
 }
 
 // ===== World map: explore every city =====
@@ -339,6 +374,9 @@ const heatRamp = (t) => d3.interpolateMagma(1 - t);
 const gridObj = () => GRID[state.metric][state.baseline];
 
 function drawMap() {
+  // the map uses the fixed landscape viewBox (drawCentury swaps it for a
+  // pixel-matched one, so reset it here).
+  svg.attr("viewBox", `0 0 ${WIDTH} ${HEIGHT}`);
   sceneTitleBlock(
     "Now find your city",
     `Every dot is a real city. Color shows ${meta().change} by the 2080s* (vs. ${baselineLabel()}). Click one to follow its story.`
@@ -704,6 +742,16 @@ btnNext.on("click", () => {
 d3.select("body").on("keydown", (event) => {
   if (event.key === "ArrowRight") btnNext.node().click();
   if (event.key === "ArrowLeft") btnPrev.node().click();
+});
+
+// Redraw on resize/rotate (debounced) so the responsive century chart and the
+// wrapping layouts settle at the new width.
+let resizeTimer;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    if (DATA) renderScene();
+  }, 150);
 });
 
 // Metric selector (a trigger): switch which "day of concern" the whole story shows

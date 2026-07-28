@@ -825,6 +825,17 @@ function buildCityBar() {
     });
 }
 
+// Sticky "Find your city" button: hide it once the app itself is scrolled into
+// view (so it never covers the map), show it while the reader is up in the intro.
+const stickyCta = document.getElementById("sticky-cta");
+const vizContainer = document.getElementById("viz-container");
+if (stickyCta && vizContainer && "IntersectionObserver" in window) {
+  new IntersectionObserver(
+    ([entry]) => stickyCta.classList.toggle("cta-hidden", entry.isIntersecting),
+    { rootMargin: "0px 0px -55% 0px" } // trigger once the app reaches the upper viewport
+  ).observe(vizContainer);
+}
+
 // ===== Init =====
 Promise.all([
   d3.json("data/heat.json"),

@@ -59,10 +59,10 @@ test.describe("app", () => {
     // Featured city = Chicago, hot-days: past 14.0 -> 14 red, present 20.1 -> 20 red
     await page.click("#btn-next");
     await expect(page.locator("#waffle-pair .waffle")).toHaveCount(2);
-    await expect(page.locator("#waffle-pair rect.sq")).toHaveCount(730);
+    await expect(page.locator("#waffle-pair path.sq")).toHaveCount(730);
     const counts = await page.evaluate(() => {
       const waffles = [...document.querySelectorAll("#waffle-pair .waffle")];
-      return waffles.map((w) => w.querySelectorAll("rect.sq-hot").length);
+      return waffles.map((w) => w.querySelectorAll("path.sq-hot").length);
     });
     expect(counts).toEqual([14, 20]);
   });
@@ -73,7 +73,7 @@ test.describe("app", () => {
     // Recife hot-days: past 46.3 -> 46 red, present 39.0 -> 39 red
     const counts = await page.evaluate(() => {
       const waffles = [...document.querySelectorAll("#waffle-pair .waffle")];
-      return waffles.map((w) => w.querySelectorAll("rect.sq-hot").length);
+      return waffles.map((w) => w.querySelectorAll("path.sq-hot").length);
     });
     expect(counts).toEqual([46, 39]);
   });
@@ -150,7 +150,7 @@ test.describe("app", () => {
     // Chicago hot-days: farLow 54.4 -> 54 red, farHigh 85.3 -> 85 red
     const counts = await page.evaluate(() => {
       const waffles = [...document.querySelectorAll("#waffle-pair .waffle")];
-      return waffles.map((w) => w.querySelectorAll("rect.sq-hot").length);
+      return waffles.map((w) => w.querySelectorAll("path.sq-hot").length);
     });
     expect(counts).toEqual([54, 85]);
   });

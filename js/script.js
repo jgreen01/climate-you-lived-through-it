@@ -44,10 +44,30 @@ const WAFFLE = {
   rows: 20,
   cols: Math.ceil(365 / 20), // 19
   cell: 15,
-  gap: 3,
+  gap: 2,
+  wave: 4, // amplitude of the S-curve on each cell edge (see wavyCell)
 };
 WAFFLE.width = WAFFLE.cols * (WAFFLE.cell + WAFFLE.gap);
 WAFFLE.height = WAFFLE.rows * (WAFFLE.cell + WAFFLE.gap);
+
+// Cell with S-curved edges: curving the gaps avoids the Hermann grid illusion
+// that a straight lattice produces. Every edge carries the same wave, so
+// neighbouring cells stay a constant distance apart.
+function wavyCell(x, y, s, k) {
+  const a = s / 3;
+  const b = (2 * s) / 3;
+  return (
+    `M${x},${y}` +
+    // top, left to right
+    `C${x + a},${y + k} ${x + b},${y - k} ${x + s},${y}` +
+    // right, top to bottom (same wave as the next cell's left edge)
+    `C${x + s + k},${y + a} ${x + s - k},${y + b} ${x + s},${y + s}` +
+    // bottom, right to left (mirrors the next row's top edge)
+    `C${x + b},${y + s - k} ${x + a},${y + s + k} ${x},${y + s}` +
+    // left, bottom to top
+    `C${x - k},${y + b} ${x + k},${y + a} ${x},${y}Z`
+  );
+}
 
 const COLOR_COOL = "#e8e6e1"; // grey squares (days that don't meet the metric)
 
@@ -73,14 +93,10 @@ function drawWaffle(container, cfg) {
     cy: (i % WAFFLE.rows) * (WAFFLE.cell + WAFFLE.gap),
   }));
 
-  g.selectAll("rect")
+  g.selectAll("path.sq")
     .data(squares)
-    .join("rect")
-    .attr("x", (d) => d.cx)
-    .attr("y", (d) => d.cy)
-    .attr("width", WAFFLE.cell)
-    .attr("height", WAFFLE.cell)
-    .attr("rx", 1.5)
+    .join("path")
+    .attr("d", (d) => wavyCell(d.cx, d.cy, WAFFLE.cell, WAFFLE.wave))
     .attr("class", (d) => (d.hot ? "sq sq-hot" : "sq sq-cool"))
     .attr("fill", (d) => (d.hot ? meta().accent : COLOR_COOL))
     .append("title")

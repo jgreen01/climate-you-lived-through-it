@@ -38,93 +38,93 @@ const meta = () => METRIC_META[state.metric];
 let DATA = null; // loaded once at init from data/heat.json
 
 // ===== Waffle Year renderer (the one chart) =====
-// A year = 365 squares in a near-square block (20 rows, filled column-major).
-// The first `days` squares are heat-red, the rest grey.
+// 365 cells, column-major. Each column is 3 weeks (21 days, 3 bands of 7 rows).
 const WAFFLE = {
-  rows: 20,
-  cols: Math.ceil(365 / 20), // 19
-  cell: 15,
-  gap: 2,
-  wave: 4, // amplitude of the S-curve on each cell edge (see wavyCell)
+  weekRows: 7,
+  bandsPerCol: 3, // weeks per column
+  colsPerGroup: 3, // columns per group, for the extra gap below
+  cell: 9,
+  gap: 1.2,
+  weekGap: 3, // extra space between week bands within a column
+  colGroupGap: 4, // extra space between groups of columns
+  wave: 3, // how far each lens cell bulges left/right (see lensCell)
+  bond: false, // stack-bond (rows aligned) reads easier than a running bond
 };
-WAFFLE.width = WAFFLE.cols * (WAFFLE.cell + WAFFLE.gap);
-WAFFLE.height = WAFFLE.rows * (WAFFLE.cell + WAFFLE.gap);
+WAFFLE.rows = WAFFLE.weekRows * WAFFLE.bandsPerCol;
+WAFFLE.cols = Math.ceil(365 / WAFFLE.rows);
+WAFFLE.width =
+  WAFFLE.cols * (WAFFLE.cell + WAFFLE.gap) +
+  Math.floor((WAFFLE.cols - 1) / WAFFLE.colsPerGroup) * WAFFLE.colGroupGap +
+  (WAFFLE.bond ? (WAFFLE.cell + WAFFLE.gap) / 2 : 0);
+WAFFLE.height =
+  WAFFLE.rows * (WAFFLE.cell + WAFFLE.gap) + (WAFFLE.bandsPerCol - 1) * WAFFLE.weekGap;
 
-// Cell with S-curved edges: curving the gaps avoids the Hermann grid illusion
-// that a straight lattice produces. Every edge carries the same wave, so
-// neighbouring cells stay a constant distance apart.
-function wavyCell(x, y, s, k) {
-  const a = s / 3;
-  const b = (2 * s) / 3;
+// A lens/vesica shape (pointed top and bottom, bulging sides) instead of a
+// square; avoids the Hermann grid illusion a straight lattice would produce.
+function lensCell(x, y, s, k) {
+  const cx = x + s / 2;
+  const midY = y + s / 2;
   return (
-    `M${x},${y}` +
-    // top, left to right
-    `C${x + a},${y + k} ${x + b},${y - k} ${x + s},${y}` +
-    // right, top to bottom (same wave as the next cell's left edge)
-    `C${x + s + k},${y + a} ${x + s - k},${y + b} ${x + s},${y + s}` +
-    // bottom, right to left (mirrors the next row's top edge)
-    `C${x + b},${y + s - k} ${x + a},${y + s + k} ${x},${y + s}` +
-    // left, bottom to top
-    `C${x - k},${y + b} ${x + k},${y + a} ${x},${y}Z`
+    `M${cx},${y}` +
+    `Q${x - k},${midY} ${cx},${y + s}` +
+    `Q${x + s + k},${midY} ${cx},${y}Z`
   );
 }
 
 const COLOR_COOL = "#e8e6e1"; // grey squares (days that don't meet the metric)
 
-// Draw one waffle year as its own <svg> appended to `container` (a d3 HTML
-// selection). Each waffle is a self-contained, viewBox-scaled chart so the
-// flex container can lay two out side by side or stack them (see #waffle-pair).
+// Draws one waffle year: an <svg> plus an HTML caption, wrapped together.
 // cfg: { days, label, sublabel }
 function drawWaffle(container, cfg) {
-  const g = container
+  const wrap = container
+    .append("div")
+    .attr("class", "waffle")
+    // lets CSS turn its height budget into a width
+    .style("--waffle-ar", WAFFLE.width / WAFFLE.height);
+  const g = wrap
     .append("svg")
     .attr("class", "waffle-svg")
-    .attr("viewBox", `0 0 ${WAFFLE.width} ${WAFFLE.height + 50}`) // +50 for labels below
+    .attr("viewBox", `0 0 ${WAFFLE.width} ${WAFFLE.height}`)
+    .style("aspect-ratio", `${WAFFLE.width} / ${WAFFLE.height}`)
     .attr("role", "img")
-    .append("g")
-    .attr("class", "waffle");
+    .append("g");
 
   const hot = Math.round(cfg.days);
-  const squares = d3.range(365).map((i) => ({
-    i,
-    hot: i < hot,
+  const pitch = WAFFLE.cell + WAFFLE.gap;
+  const squares = d3.range(365).map((i) => {
     // column-major: fill top-to-bottom, then left-to-right
-    cx: Math.floor(i / WAFFLE.rows) * (WAFFLE.cell + WAFFLE.gap),
-    cy: (i % WAFFLE.rows) * (WAFFLE.cell + WAFFLE.gap),
-  }));
+    const row = i % WAFFLE.rows;
+    const col = Math.floor(i / WAFFLE.rows);
+    const bondOffset = WAFFLE.bond && row % 2 === 1 ? pitch / 2 : 0;
+    return {
+      i,
+      hot: i < hot,
+      // column groups get extra space so columns read in threes
+      cx: col * pitch + Math.floor(col / WAFFLE.colsPerGroup) * WAFFLE.colGroupGap + bondOffset,
+      // week bands get extra space so each column reads as three weeks
+      cy: row * pitch + Math.floor(row / WAFFLE.weekRows) * WAFFLE.weekGap,
+    };
+  });
 
   g.selectAll("path.sq")
     .data(squares)
     .join("path")
-    .attr("d", (d) => wavyCell(d.cx, d.cy, WAFFLE.cell, WAFFLE.wave))
+    .attr("d", (d) => lensCell(d.cx, d.cy, WAFFLE.cell, WAFFLE.wave))
     .attr("class", (d) => (d.hot ? "sq sq-hot" : "sq sq-cool"))
     .attr("fill", (d) => (d.hot ? meta().accent : COLOR_COOL))
     .append("title")
     .text(() => `${cfg.label}: ${hot} ${meta().noun} in an average year`);
 
-  g.append("text")
-    .attr("class", "waffle-label")
-    .attr("x", 0)
-    .attr("y", WAFFLE.height + 22)
-    .text(cfg.label);
-
+  // Caption stacks in three lines below the chart (label, sublabel, then the
+  // headline count on its own line) as plain HTML rather than SVG text, so it
+  // reads at a normal size no matter how narrow the chart itself gets.
+  wrap.append("div").attr("class", "waffle-label").text(cfg.label);
   if (cfg.sublabel) {
-    g.append("text")
-      .attr("class", "waffle-sublabel")
-      .attr("x", 0)
-      .attr("y", WAFFLE.height + 40)
-      .text(cfg.sublabel);
+    wrap.append("div").attr("class", "waffle-sublabel").text(cfg.sublabel);
   }
+  wrap.append("div").attr("class", "waffle-count").text(`${hot} ${meta().unit}`);
 
-  // big number readout: the headline figure of the waffle
-  g.append("text")
-    .attr("class", "waffle-count")
-    .attr("x", WAFFLE.width)
-    .attr("y", WAFFLE.height + 28)
-    .attr("text-anchor", "end")
-    .text(`${hot} ${meta().unit}`);
-
-  return g;
+  return wrap;
 }
 
 function cityEra(cityKey, eraKey) {
@@ -167,9 +167,7 @@ function sceneTitleBlock(title, subtitle) {
   sceneSubtitle.text(subtitle);
 }
 
-// Draw the two waffles into the flex container. It lays them side by side when
-// there is room and wraps to a stacked column on narrow screens (see the
-// #waffle-pair CSS); each waffle scales itself, so no coordinates are needed.
+// Draws the two waffles into #waffle-pair (CSS handles side-by-side/stacked).
 function drawWafflePair(left, right) {
   drawWaffle(wafflePair, left);
   drawWaffle(wafflePair, right);

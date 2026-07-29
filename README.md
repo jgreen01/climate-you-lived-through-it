@@ -51,8 +51,9 @@ hot nights a year today to a projected 362. Freezing days counter the
 assumption that warming is only a story about hot places: Potosí, Bolivia falls
 from 145.8 freezing days in the 1980s to about 16, or to zero, depending on the
 path taken. Dangerous heat, at or above 40C, asks whether some places stay
-livable as they are lived in today: Laredo goes from 5.9 such days a year to a
-projected 101, and Dubai from 68.4 to about 172.
+livable as they are lived in today: Laredo averaged 5.9 such days a year in the
+1980s and 17 today, with 101 projected under high emissions, and Dubai rises
+from 68.4 in the 1980s to a projected 172.
 
 ## Narrative Structure
 

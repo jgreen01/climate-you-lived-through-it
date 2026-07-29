@@ -7,10 +7,10 @@ with D3.
 
 The site opens with a short written introduction, then an interactive world
 map. Every dot on that map is one of 166 real cities. Pick yours (or start with
-the featured city) and follow a short, personalized story: how many dangerously
-hot days your city already gained since the 1980s, how many more are locked in
-for the next twenty years, and how far the two possible 2080s diverge depending
-on the emissions path the world takes.
+the featured city) and follow a short, personalized story: how many extreme
+days your city already gained since the 1980s, how many more are locked in for
+the next twenty years, and how far the two possible 2080s diverge depending on
+the emissions path the world takes.
 
 **Data.** Historical counts (1980 to 2024) are *measured*, from the Open-Meteo
 Historical Archive (daily maximum and minimum temperatures per city, averaged
@@ -74,50 +74,72 @@ breadcrumbs are a convenience layer on that backbone.
 
 ## Visual Structure
 
-Every scene shares one template: title and one-line subtitle, metric buttons,
-the chart in a bordered box, a navigation row, and one fixed footnote on which
-years are measured and which are modeled. Holding that constant means the chart
-is the only thing that changes, which lets the eye compare scenes.
+**The structure of each scene.** Every scene shares one template: title,
+one-line subtitle, metric buttons, the chart in a bordered box, a navigation
+row, and a fixed footnote separating measured years from modeled ones. Holding
+that constant means the chart is the only thing that changes, which lets the
+eye compare scenes instead of relearning the page. Only three forms ever fill
+the box: the world map, the **waffle year**, and the century line chart.
 
-The recurring idiom is the **waffle year**: 365 squares for one average year,
-days crossing the threshold filled in the metric's accent color and the rest
-grey. Three scenes place two waffles side by side, so each comparison is a
-direct difference in red area with a headline count beside it; the final scene
-switches to a line chart.
-
-The three forms are matched to their jobs using Cleveland and McGill's ordering
-of elementary perceptual tasks, which ranks position along a common scale most
+**How it makes the data understandable and the scene navigable.** The three
+forms are matched to their jobs using Cleveland and McGill's ordering of
+elementary perceptual tasks, which ranks position along a common scale most
 accurate and shading least. The map encodes magnitude as shading, the weakest
 rank, so it is used only to locate a city and read the broad pattern, never to
 extract a value, which is itself the argument for drilling down. The closing
 line chart sits at the opposite end, encoding its values as position along a
 common scale, which is why it suits the final synthesis.
 
-The waffle year is deliberately placed between them, and its advantage is that
-it offers more than one perceptual route to the same quantity. Read as a shape,
-the growing red block is an area judgment, which the ordering places mid-pack.
-But because every waffle is the same 365-square grid, the boundary where red
-turns to grey also falls at a comparable position within a fixed frame, which
-is a far more accurate task, and the discrete squares allow a viewer to count
-or estimate against a denominator they already understand, a year. A viewer who
-only glances gets the area impression; one who looks carefully gets the
-position and the count. The printed day count beside each block removes any
-remaining ambiguity. One consequence of a grid this dense is the Hermann, or
-scintillating, grid illusion, in which illusory grey blobs appear where the
-pale gaps between dark cells cross. Since the straightness of those gaps is
-what drives the effect, each cell edge is drawn as a gentle S-curve rather than
-a straight line. Every edge carries the same wave, so a cell bulges out exactly
-where its neighbour bulges in and the gap holds a constant width along its
-whole length. No straight street survives to produce the blobs, and because the
-spacing stays even the eye still reads the cells rather than the gaps between
-them.
+The waffle year carries the middle three scenes, and because it is not a
+standard chart type it needs the most justification. Most climate communication
+is pitched at people who already know how to read it: anomaly curves against a
+pre-industrial baseline, concentrations in parts per million, warming as a
+global average. Each asks the reader to hold an abstraction before the number
+means anything, which quietly excludes most people. I wanted a chart that
+someone with no training and no particular level of education could read, one a
+child could make sense of unaided. A year is 365 days, and everyone already
+owns that denominator. Filling in the days that cross a threshold, and printing
+the count beside them, turns a statistical abstraction into a tangible amount
+of lived experience.
 
-Color reinforces this. A sequential magma ramp carries magnitude through
-lightness rather than hue, which stays readable for colorblind viewers;
+Accessibility here does not cost accuracy, because the waffle offers more than
+one perceptual route to the same quantity. Read as a shape, the growing colored
+block is an area judgment, which the ordering places mid-pack. But because
+every waffle is the same 365-cell grid, the boundary where color turns to grey
+falls at a comparable position within a fixed frame, a far more accurate task,
+and the two waffles sit side by side so the comparison happens in one frame
+rather than against a remembered one. The cells are structured rather than
+poured into a block: each column is three seven-day bands, grouped in threes,
+so the grid carries its own ruler. Miami's 91 hot days are not "about a quarter
+of the year" but thirteen countable weeks. A viewer who only glances gets the
+area impression; one who looks carefully gets the position and the count; the
+printed figure removes any remaining ambiguity. (Cells are drawn as lenses
+rather than squares so the pale gaps never run straight, which would otherwise
+produce the Hermann grid illusion in a lattice this dense.)
+
+Navigation needs no instructions because nothing moves: controls hold their
+position from scene to scene, Back and Next name their destination ("See the
+2080 fork"), breadcrumb dots mark position in the sequence, and each scene fits
+one screen, since a comparison the reader has to scroll between is not really a
+comparison.
+
+**How it directs attention.** Each scene has one figure to carry, and the
+template makes it hard to miss: threshold days in saturated accent color
+against inert grey, the day count printed beside each block, the selected city
+drawn larger than its neighbours, and on the line chart the wedge between the
+two futures shaded so "the choice" becomes a visible area. Color reinforces
+this on the map, where a sequential magma ramp carries magnitude through
+lightness rather than hue. That keeps it readable for colorblind viewers, and
 lightness reads poorly for exact quantities but well for the ordinal question
-the map actually asks, whether one region is worse off than another. The
-selected city is drawn larger, and on the line chart the wedge between the two
-futures is shaded, making "the choice" a visible area.
+the map actually asks, whether one region is worse off than another.
+
+**How the scenes connect.** The scenes hand off by construction rather than by
+transition effect. "Now" is the right-hand waffle of scene 1 and the left-hand
+waffle of scene 2, so the panel just read becomes the baseline of the next
+question and visibly carries the argument from measured past into committed
+future. The closing line chart then replots every quantity the waffle scenes
+established onto one axis, so the reader meets those values a second time as a
+single shape.
 
 ## Scenes
 
@@ -144,12 +166,16 @@ synthesis.
 
 One template throughout: **a bold headline figure with a short descriptor,
 anchored to the mark it labels and always visible, never waiting for a
-mouseover.** On each waffle it is the day count ("20 days") in accent red with
-the era named beneath. On the line chart it names both endpoints ("If we don't
+mouseover.** On each waffle it is the day count ("20 days") in the metric's
+accent color with the era named beneath. On the line chart it names both endpoints ("If we don't
 act: 85 days / high emissions" and "If we act: 54 days / low emissions") in
 each fork's color, and the shaded wedge between them is a second, non-textual
-annotation calling out the gap. The template makes the one figure carrying each
-scene's point impossible to miss, with no interaction required.
+annotation calling out the gap. Where a city's two futures land on the same
+count, as Chicago's dangerous-heat days do at zero and zero, the two labels
+separate to a minimum spacing while their markers stay on the true values, so
+the annotation never collides with itself and never misreports the data. The
+template makes the one figure carrying each scene's point impossible to miss,
+with no interaction required.
 
 Annotations change within a scene by parameter rather than by time: switching
 city or metric recomputes every callout, so they always describe the current
@@ -169,11 +195,13 @@ mouseover.
 - **`baseline`**: on the map only, whether change is measured since the 1980s
   or since today.
 
-One render step reads all four and rebuilds the scene: it clears the chart,
-sets the title and navigation from `scene`, then calls that scene's draw
-function, which reads `city` and `metric` (and `baseline` on the map). Every
-scene is a pure function of these values, so a trigger only has to change a
-parameter and request a re-render.
+A state is one combination of these four values and nothing else is
+remembered, so the five scenes, 166 cities, four metrics and two map baselines
+enumerate every view the piece can show. One render step reads all four and
+rebuilds the scene: it clears the chart, sets the title and navigation from
+`scene`, then calls that scene's draw function, which reads `city` and `metric`
+(and `baseline` on the map). Every scene is a pure function of these values, so
+a trigger only has to change a parameter and request a re-render.
 
 ## Triggers
 

@@ -3,7 +3,22 @@
 An interactive narrative visualization about extreme temperature days, built
 with D3.
 
-**Live site:** https://jgreen01.github.io/climate-you-lived-through-it/
+| | |
+|---|---|
+| **Student** | Jonathon Green |
+| **Course** | CS 416, Data Visualization |
+| **Term** | Summer 2026 |
+| **Instructor** | John Hart |
+| **Assignment** | Final Project, Narrative Visualization |
+| **Live site** | https://jgreen01.github.io/climate-you-lived-through-it/ |
+| **Repository** | https://github.com/jgreen01/climate-you-lived-through-it |
+
+The essay answering the seven required questions begins at
+[Essay](#essay) below.
+
+**Libraries.** D3 v7 only, plus the two permitted additions, d3-annotation and
+topoJSON Client. All three are vendored under `js/lib/`. No other library,
+framework, or high-level visualization tool is used.
 
 The site opens with a short written introduction, then an interactive world
 map. Every dot on that map is one of 166 real cities. Pick yours (or start with

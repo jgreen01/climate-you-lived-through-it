@@ -354,12 +354,27 @@ function drawCentury() {
         .text(`${title}: ${Math.round(val)} days`);
     });
   } else {
-    endpoints.forEach(([pts, color, title, sub]) => {
+    // Close or equal values would overlap, so spread the labels apart while
+    // leaving the dots on their true values.
+    const labelYs = endpoints.map(([pts]) => y(pts[1][1]));
+    const MIN_GAP = 30;
+    if (Math.abs(labelYs[0] - labelYs[1]) < MIN_GAP) {
+      const mid = (labelYs[0] + labelYs[1]) / 2;
+      const half = MIN_GAP / 2;
+      labelYs[0] = labelYs[0] <= labelYs[1] ? mid - half : mid + half;
+      labelYs[1] = labelYs[0] === mid - half ? mid + half : mid - half;
+    }
+    endpoints.forEach(([pts, color, title, sub], i) => {
       const [yr, val] = pts[1];
+      g.append("circle")
+        .attr("class", "pt")
+        .attr("cx", x(yr))
+        .attr("cy", y(val))
+        .attr("r", 5)
+        .attr("fill", color);
       const gg = g
         .append("g")
-        .attr("transform", `translate(${x(yr) + 10},${y(val)})`);
-      gg.append("circle").attr("r", 5).attr("fill", color);
+        .attr("transform", `translate(${x(yr) + 10},${labelYs[i]})`);
       gg.append("text")
         .attr("class", "end-title")
         .attr("x", 10)

@@ -22,10 +22,7 @@ body {
   min-height: 100vh;
 }
 
-/* Intro article: the linear "stem" the reader gets before the interactive
-   drill-down below. Plain prose, no interaction, ending in a jump to the map.
-   A centered readable column, centered in the viewport like the app below it so
-   the two share a centerline. */
+/* Intro article: linear, non-interactive lead-in before the map. */
 #intro {
   width: min(640px, 92vw);
   padding: 3.5rem 1rem 2.5rem;
@@ -53,9 +50,7 @@ body {
 .intro-metrics li { margin-bottom: 0.55rem; }
 .intro-metrics strong { color: var(--fg); }
 
-/* Inline "Find your city" button. Hidden on narrow screens (mobile uses the
-   floating #sticky-cta instead); shown on wider screens by the media query
-   below, which also hides the floating button there. */
+/* Inline "Find your city" button: desktop only, mobile uses #sticky-cta. */
 .intro-cta {
   display: none;
   margin-top: 0.5rem;
@@ -73,9 +68,7 @@ body {
   #sticky-cta { display: none; }        /* floating button is mobile-only */
 }
 
-/* Sticky "Find your city" button: always reachable while reading the intro,
-   fades out once the interactive app is scrolled into view (so it never
-   covers the map or its controls). */
+/* Floating "Find your city" button, mobile only; fades out once the map is in view. */
 #sticky-cta {
   position: fixed;
   bottom: 1rem;
@@ -100,14 +93,18 @@ body {
   scroll-margin-top: 1rem; /* breathing room when the CTA jumps here */
 }
 
+/* shrinks on narrow screens so the chart keeps the vertical space */
 header h1 {
-  margin: 0.5rem 0 0.25rem;
-  font-size: 1.6rem;
+  margin: 0.35rem 0 0.15rem;
+  font-size: clamp(1.15rem, 4.2vw, 1.6rem);
+  line-height: 1.2;
 }
 
 #scene-subtitle {
-  margin: 0 0 0.75rem;
+  margin: 0 0 0.5rem;
   color: var(--muted);
+  font-size: clamp(0.85rem, 3.2vw, 1rem);
+  line-height: 1.3;
 }
 
 #chart-box {
@@ -123,18 +120,28 @@ header h1 {
   height: auto;
 }
 
-/* Waffle scenes: two waffle charts that sit side by side when there is room
-   and wrap to a single stacked column on narrow screens, via flex-wrap (no
-   media query). Each waffle is its own viewBox-scaled <svg>. */
+/* The waffles stack by default and sit side by side when there is width to
+   spare or, as on a landscape phone, when height is the scarce axis. */
 #waffle-pair {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 1.25rem 2rem;
   padding: 1.5rem 1rem;
 }
-.waffle-svg { flex: 1 1 240px; max-width: 380px; height: auto; }
+@media (min-width: 830px), (max-height: 520px) {
+  #waffle-pair {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+/* .waffle carries the width; the svg fills it and gets its height from aspect-ratio */
+.waffle-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 /* only one chart surface shows per scene */
 #chart[hidden], #waffle-pair[hidden] { display: none; }
@@ -181,9 +188,46 @@ footer {
 footer #attribution { max-width: 40rem; text-align: center; line-height: 1.5; }
 
 /* ===== Waffle Year ===== */
-.waffle-label { font-size: 15px; font-weight: 600; fill: var(--fg); }
-.waffle-sublabel { font-size: 12px; fill: var(--muted); }
-.waffle-count { font-size: 18px; font-weight: 700; fill: var(--accent); }
+/* Wraps one waffle's <svg> + its HTML caption. Width is what gets set, so the
+   scene fits one screen: --waffle-chrome is the height everything else takes,
+   and what's left becomes the chart, converted to a width by --waffle-ar
+   (set in JS). The max() is a floor so cells stay countable on short screens. */
+.waffle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0 1 auto;
+  --waffle-chrome: 460px; /* stacked, so two charts and two captions */
+  width: max(
+    150px,
+    min(85vw, calc((100dvh - var(--waffle-chrome)) / 2 * var(--waffle-ar)))
+  );
+}
+/* Side by side: one chart's worth of height, and 50% of #waffle-pair less half
+   its 2rem column gap to keep both on one row. */
+@media (min-width: 830px), (max-height: 520px) {
+  .waffle {
+    --waffle-chrome: 390px;
+    width: max(
+      220px,
+      min(calc(50% - 1rem), calc((100dvh - var(--waffle-chrome)) * var(--waffle-ar)))
+    );
+  }
+}
+/* Landscape phones: the chrome below is tightened too, and the floor drops
+   because a short screen has no height to give. */
+@media (max-height: 520px) {
+  .waffle {
+    --waffle-chrome: 305px;
+    width: max(
+      110px,
+      min(calc(50% - 1rem), calc((100dvh - var(--waffle-chrome)) * var(--waffle-ar)))
+    );
+  }
+}
+.waffle-label { font-size: 15px; font-weight: 600; color: var(--fg); margin-top: 0.6rem; }
+.waffle-sublabel { font-size: 12px; color: var(--muted); }
+.waffle-count { font-size: 18px; font-weight: 700; color: var(--accent); margin-top: 0.15rem; }
 
 /* ===== Map (Scene 4) ===== */
 .sphere { fill: #eef2f5; stroke: #d5dbe0; stroke-width: 0.5; }
@@ -251,15 +295,14 @@ footer #attribution { max-width: 40rem; text-align: center; line-height: 1.5; }
 .end-title { font-size: 13px; font-weight: 700; }
 .end-sub { font-size: 11px; fill: var(--muted); }
 
-/* metric selector: a group of segment buttons above the chart. Wraps to more
-   rows on narrow screens (flex-wrap, no media query); each button reads the
-   same whether it is on the first row or a wrapped one. */
+/* metric selector: segment buttons, wraps to more rows on narrow screens */
 #metric-bar {
   display: flex; flex-wrap: wrap; gap: 0.4rem;
   margin: 0.5rem 0 0.6rem;
 }
 .metric-btn {
   font: inherit; font-size: 0.9rem; padding: 0.45rem 1rem; cursor: pointer;
+  white-space: nowrap;
   background: #ececec; color: var(--muted);
   border: 1px solid #e0e0e0; border-radius: 6px;
 }
@@ -314,3 +357,21 @@ footer #attribution { max-width: 40rem; text-align: center; line-height: 1.5; }
 }
 #city-select:hover { background: #f2f2f2; }
 #city-select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+/* ===== Small screens =====
+   Narrow ones stack the waffles and short ones have little height to begin
+   with; either way the chart needs the space, so everything around it is
+   tightened. Last in the file so it wins over the rules it overrides. */
+@media (max-width: 829px), (max-height: 620px) {
+  #viz-container { padding: 0.5rem; }
+  #metric-bar { gap: 0.3rem; margin: 0.35rem 0 0.4rem; }
+  .metric-btn { font-size: 0.78rem; padding: 0.35rem 0.55rem; }
+  #city-select-label { padding: 0.45rem 0.6rem; }
+  #city-select { font-size: 0.82rem; padding: 0.25rem 1.4rem 0.25rem 0.5rem; }
+  #waffle-pair { padding: 0.6rem 0.5rem; gap: 0.6rem; }
+  #scene-nav { gap: 0.5rem; margin-top: 0.4rem; }
+  #scene-nav button { font-size: 0.82rem; padding: 0.35rem 0.6rem; }
+  .waffle-label { font-size: 13px; margin-top: 0.3rem; }
+  .waffle-sublabel { font-size: 11px; }
+  .waffle-count { font-size: 15px; margin-top: 0; }
+}

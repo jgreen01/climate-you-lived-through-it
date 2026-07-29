@@ -170,12 +170,18 @@ mouseover.** On each waffle it is the day count ("20 days") in the metric's
 accent color with the era named beneath. On the line chart it names both endpoints ("If we don't
 act: 85 days / high emissions" and "If we act: 54 days / low emissions") in
 each fork's color, and the shaded wedge between them is a second, non-textual
-annotation calling out the gap. Where a city's two futures land on the same
-count, as Chicago's dangerous-heat days do at zero and zero, the two labels
-separate to a minimum spacing while their markers stay on the true values, so
-the annotation never collides with itself and never misreports the data. The
-template makes the one figure carrying each scene's point impossible to miss,
-with no interaction required.
+annotation calling out the gap. The template makes the one figure carrying each
+scene's point impossible to miss, with no interaction required.
+
+Each callout carries one beat of the message. In scene 1 the pair of counts is
+the evidence that the change has already happened, which is why both numbers
+are measured and labeled with their decades. In scene 2 the 2045 figure is the
+locked-in claim, and its descriptor says so in words ("already locked in,
+regardless of policy") so the number cannot be mistaken for a prediction that
+policy could still avert. In scenes 3 and 4 the two labeled endpoints and the
+shaded wedge between them are the choice: the annotation is the gap itself, not
+either value alone. Reading only the bold figures, in order, reproduces the
+argument in three numbers.
 
 Annotations change within a scene by parameter rather than by time: switching
 city or metric recomputes every callout, so they always describe the current
@@ -220,18 +226,28 @@ a trigger only has to change a parameter and request a re-render.
   city's name and projected change; anywhere, magnification of the area beneath
   the cursor.
 
-The magnification uses two techniques. A true geometric fisheye of the map was
-impractical, since its contours hold thousands of path vertices that would need
-recomputing on every mouse movement, so the fisheye is applied only to the city
-dots, where it is cheap and separates dense clusters like Europe and Southeast
-Asia. The map surface instead gets a conventional magnifier, a live scaled copy
-inside a circular lens that follows the cursor. Because the dots move and the
-terrain does not, hovered cities appear to lift slightly above the map, which
-was not the goal but makes the interaction feel tactile.
+The magnification works in two parts: a fisheye on the city dots, which pushes
+them apart so a single city can be picked out of a dense cluster like Europe or
+Southeast Asia, and a circular lens over the map surface holding a live scaled
+copy of the terrain beneath the cursor. Both exist so that the drill-down
+trigger stays usable on a crowded map.
 
-Affordances keep the options visible without instructions: labeled buttons,
-highlighted pills, hover labels on the breadcrumbs, a pointer cursor on the
-dots, and the introduction's "Find your city" button.
+Free-form exploration is concentrated on the map on purpose. Scene 0 is where
+the reader's task is choosing, so hovering is rewarded there with a tooltip and
+magnification; the story scenes carry at most a plain hover tooltip on a waffle
+cell and otherwise hold still, leaving the always-visible annotations to make
+the argument. Exploration therefore feeds the drill-down rather than competing
+with it: it helps the reader pick a storyline, and then it gets out of the way.
+
+Affordances keep every option visible without instructions, so the reader never
+has to work out what is clickable. Back and Next are labeled with their
+destination rather than a bare direction; the active metric and the active map
+baseline are drawn in a selected state, so the current parameter values are
+never ambiguous; Back is visibly disabled on the first scene, marking the start
+of the sequence; each breadcrumb dot carries a hover label naming its scene;
+the city dots take a pointer cursor and grow under the fisheye, advertising
+that they respond; and the introduction ends in a "Find your city" button that
+delivers the reader to the map.
 
 ## Reference
 

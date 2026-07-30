@@ -214,7 +214,9 @@ annotations never depend on a mouseover.
 
 A state is one combination of these four values and nothing else is
 remembered, so the five scenes, 166 cities, four metrics and two map baselines
-enumerate every view the piece can show. One render step reads all four and
+enumerate every view the piece can show. The reader arrives in the opening
+state, scene 0 with Chicago as the featured city, hot days as the metric, and
+map change measured since today. One render step reads all four and
 rebuilds the scene: it clears the chart, sets the title and navigation from
 `scene`, then calls that scene's draw function, which reads `city` and `metric`
 (and `baseline` on the map). Every scene is a pure function of these values, so

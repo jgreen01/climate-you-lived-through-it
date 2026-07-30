@@ -171,30 +171,34 @@ five scenes with different numbers and never changes the sequence.
 
 ## Annotations
 
-One template throughout: **a bold headline figure with a short descriptor,
-anchored to the mark it labels and always visible, never waiting for a
-mouseover.** On each waffle it is the day count ("20 days") in the metric's
-accent color with the era named beneath. On the line chart it names both endpoints ("If we don't
-act: 85 days / high emissions" and "If we act: 54 days / low emissions") in
-each fork's color, and the shaded wedge between them is a second, non-textual
-annotation calling out the gap. The template makes the one figure carrying each
-scene's point impossible to miss, with no interaction required.
+**The template, and why.** One template throughout: **a bold headline figure
+with a short descriptor, anchored to the mark it labels and always visible,
+never waiting for a mouseover.** Each scene turns on a single number, and the
+template exists to make that number impossible to miss without requiring the
+reader to hover, click, or know to look. On a waffle it is the day count ("20
+days") in the metric's accent color, with the era named beneath it. On the line
+chart it is both endpoint labels ("If we don't act: 85 days / high emissions"
+and "If we act: 54 days / low emissions") in each fork's color, plus the shaded
+wedge between them, a second annotation that is non-textual: it calls out the
+gap by drawing it.
 
-Each callout carries one beat of the message. In scene 1 the pair of counts is
-the evidence that the change has already happened, which is why both numbers
-are measured and labeled with their decades. In scene 2 the 2045 figure is the
-locked-in claim, and its descriptor says so in words ("already locked in,
-regardless of policy") so the number cannot be mistaken for a prediction that
-policy could still avert. In scenes 3 and 4 the two labeled endpoints and the
-shaded wedge between them are the choice: the annotation is the gap itself, not
-either value alone. Reading only the bold figures, in order, reproduces the
-argument in three numbers.
+**How they support the messaging.** Each callout carries one beat of the
+message. In scene 1 the pair of counts is the evidence that the change has
+already happened, which is why both numbers are measured and labeled with their
+decades. In scene 2 the 2045 figure is the locked-in claim, and its descriptor
+says so in words ("already locked in, regardless of policy") so the number
+cannot be mistaken for a prediction that policy could still avert. In scene 3
+the two counts are the choice, and their labels name it as one ("If we act",
+"If we don't"); scene 4 restates that gap as the shaded wedge. Read the bold
+figures alone, in order, and the argument still holds: for Chicago's hot days,
+14 then 20, 20 then 40, 54 against 85.
 
-Annotations change within a scene by parameter rather than by time: switching
-city or metric recomputes every callout, so they always describe the current
-subject. The map's hover tooltip is treated as free-form exploration rather
-than annotation, which is why the load-bearing annotations never depend on a
-mouseover.
+**Whether they change within a scene.** They change by parameter rather than by
+time. Switching city or metric recomputes every callout, so the annotations
+always describe the current subject rather than a remembered one; nothing
+changes on a timer or on scroll. The map's hover tooltip is treated as
+free-form exploration rather than annotation, which is why the load-bearing
+annotations never depend on a mouseover.
 
 ## Parameters
 

@@ -82,54 +82,49 @@ closing line chart.
 
 ## Visual Structure
 
-**The structure of each scene.** Every scene shares one template: title,
+**The visual structure of each scene.** Every scene shares one template: title,
 one-line subtitle, metric buttons, the chart in a bordered box, a navigation
 row, and a fixed footnote separating measured years from modeled ones. Holding
 that constant means the chart is the only thing that changes, which lets the
-eye compare scenes instead of relearning the page. Only three forms ever fill
-the box: the world map, the **waffle year**, and the century line chart.
+eye compare scenes instead of relearning the page. Three forms fill that box:
+the world map on scene 0, a pair of **waffle years** side by side on scenes 1
+to 3, and the century line chart on scene 4.
 
-**How it makes the data understandable and the scene navigable.** The three
-forms are matched to their jobs using Cleveland and McGill's ordering of
-elementary perceptual tasks, which ranks position along a common scale most
-accurate and shading least. The map encodes magnitude as shading, the weakest
-rank, so it is used only to locate a city and read the broad pattern, never to
-extract a value, which is itself the argument for drilling down. The closing
-line chart sits at the opposite end, encoding its values as position along a
-common scale, which is why it suits the final synthesis.
+**How it makes the data understandable.** The three forms are matched to their
+jobs using Cleveland and McGill's ordering of elementary perceptual tasks,
+which ranks position along a common scale most accurate and shading least. The
+map encodes magnitude as shading, the weakest rank, so it is used only to
+locate a city and read the broad pattern, never to extract a value, which is
+itself the argument for drilling down. The line chart sits at the opposite end,
+encoding its values as position along a common scale, which is why it suits the
+final synthesis.
 
 The waffle year carries the middle three scenes, and because it is not a
-standard chart type it needs the most justification. Most climate communication
-is pitched at people who already know how to read it: anomaly curves against a
-pre-industrial baseline, concentrations in parts per million, warming as a
-global average. Each asks the reader to hold an abstraction before the number
-means anything, which quietly excludes most people. I wanted a chart that
-someone with no training and no particular level of education could read, one a
-child could make sense of unaided. A year is 365 days, and everyone already
-owns that denominator. Filling in the days that cross a threshold, and printing
-the count beside them, turns a statistical abstraction into a tangible amount
-of lived experience.
+standard chart type it needs the most justification. It is the form that serves
+the goal behind the whole piece: a chart someone with no training and no
+particular level of education could read. A year is 365 days, and everyone
+already owns that denominator, so filling in the days that cross a threshold
+needs no explaining. That fixed ceiling is also what makes the difference felt
+rather than merely read. Across a pair of waffles the reader watches the
+colored days advance while the ordinary ones give way, both happening inside
+the same 365 that cannot grow, and it is seeing how little grey is left that
+carries the urgency.
 
-Accessibility here does not cost accuracy, because the waffle offers more than
-one perceptual route to the same quantity. Read as a shape, the growing colored
-block is an area judgment, which the ordering places mid-pack. But because
-every waffle is the same 365-cell grid, the boundary where color turns to grey
-falls at a comparable position within a fixed frame, a far more accurate task,
-and the two waffles sit side by side so the comparison happens in one frame
-rather than against a remembered one. The cells are structured rather than
-poured into a block: each column is three seven-day bands, grouped in threes,
-so the grid carries its own ruler. Miami's 91 hot days are not "about a quarter
-of the year" but thirteen countable weeks. A viewer who only glances gets the
-area impression; one who looks carefully gets the position and the count; the
-printed figure removes any remaining ambiguity. (Cells are drawn as lenses
-rather than squares so the pale gaps never run straight, which would otherwise
-produce the Hermann grid illusion in a lattice this dense.)
+The waffle gives more than one route to the same quantity. The block of color
+is an area judgment, which the ordering places mid-pack, but every waffle is
+the same 365-cell grid, so the boundary where color turns to grey also falls at
+a comparable position within a fixed frame, a far more accurate task. Each
+column is three seven-day bands, grouped in threes, so the grid carries its own
+ruler: Miami's 91 hot days are not "about a quarter of the year" but thirteen
+countable weeks. A viewer who only glances gets the area impression, one who
+looks carefully gets the position and the count, and the printed figure removes
+any remaining ambiguity.
 
-Navigation needs no instructions because nothing moves: controls hold their
-position from scene to scene, Back and Next name their destination ("See the
-2080 fork"), breadcrumb dots mark position in the sequence, and each scene fits
-one screen, since a comparison the reader has to scroll between is not really a
-comparison.
+**How it makes the scene navigable.** Nothing moves, so no instructions are
+needed. Controls hold their position from scene to scene, Back and Next name
+their destination ("See the 2080 fork"), breadcrumb dots mark position in the
+sequence, and each scene fits one screen, since a comparison the reader has to
+scroll between is not really a comparison.
 
 **How it directs attention.** Each scene has one figure to carry, and the
 template makes it hard to miss: threshold days in saturated accent color

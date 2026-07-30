@@ -65,21 +65,20 @@ whatever is decided now. And by the 2080s Chicago's two possible futures stand
 
 ## Narrative Structure
 
-A **drill-down story**, preceded by a short linear introduction. The
-introduction is a non-interactive written article stating the message and
-previewing the four metrics, so the message reaches every reader before
-exploration begins, in the spirit of a martini glass's stem. After it, the map
-is the overview: clicking a city dot descends into that city's fixed four-scene
-story.
+A **drill-down story**. A short written introduction opens it, stating the
+message and naming the four metrics, giving the reader a reason to care and
+enough curiosity about their own city to want to look it up. From there, the
+map is one overview holding 166 cities. The reader picks one, and that single
+choice determines the whole four-scene story that follows.
 
-The map is deliberately the first scene, not a reward at the end, because a
-drill-down gives an overview and lets the user choose where to descend. One
-fair objection is that the city dropdown and metric buttons appear on every
-scene, which resembles an interactive slideshow. What keeps it a drill-down is
-that scene 0 is not a step in any city's story but a global overview across 166
-cities, categorically different from scenes 1 to 4, which always follow one
-city in a fixed order. Choosing a city is the drill; the dropdown and
-breadcrumbs are a convenience layer on that backbone.
+The city dropdown on the story scenes lets the reader jump to a different city
+without returning to the map, a convenience for exploring and comparing cities
+more quickly rather than a second drill-down. The reader can also switch among
+the four metrics at any time: hot days, hot nights, dangerous heat, and
+freezing days. Together, the city and metric selections let the reader explore
+different climates and kinds of extreme days in a free-form way, comparing the
+different time ranges on the story scenes or the whole century at once on the
+closing line chart.
 
 ## Visual Structure
 

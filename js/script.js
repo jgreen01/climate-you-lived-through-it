@@ -49,15 +49,28 @@ const WAFFLE = {
   colGroupGap: 4, // extra space between groups of columns
   wave: 3, // how far each lens cell bulges left/right (see lensCell)
   bond: false, // stack-bond (rows aligned) reads easier than a running bond
+  pad: 7, // breathing room between the cells and the frame
+  margin: 2, // room outside the frame so its stroke is never clipped
 };
 WAFFLE.rows = WAFFLE.weekRows * WAFFLE.bandsPerCol;
 WAFFLE.cols = Math.ceil(365 / WAFFLE.rows);
-WAFFLE.width =
-  WAFFLE.cols * (WAFFLE.cell + WAFFLE.gap) +
+// Grid: the cells alone. The trailing gap is dropped so the frame sits evenly.
+WAFFLE.gridW =
+  WAFFLE.cols * (WAFFLE.cell + WAFFLE.gap) -
+  WAFFLE.gap +
   Math.floor((WAFFLE.cols - 1) / WAFFLE.colsPerGroup) * WAFFLE.colGroupGap +
   (WAFFLE.bond ? (WAFFLE.cell + WAFFLE.gap) / 2 : 0);
-WAFFLE.height =
-  WAFFLE.rows * (WAFFLE.cell + WAFFLE.gap) + (WAFFLE.bandsPerCol - 1) * WAFFLE.weekGap;
+WAFFLE.gridH =
+  WAFFLE.rows * (WAFFLE.cell + WAFFLE.gap) -
+  WAFFLE.gap +
+  (WAFFLE.bandsPerCol - 1) * WAFFLE.weekGap;
+// Frame: the box drawn around the grid, and the viewBox around that.
+WAFFLE.frameW = WAFFLE.gridW + 2 * WAFFLE.pad;
+WAFFLE.frameH = WAFFLE.gridH + 2 * WAFFLE.pad;
+WAFFLE.width = WAFFLE.frameW + 2 * WAFFLE.margin;
+WAFFLE.height = WAFFLE.frameH + 2 * WAFFLE.margin;
+WAFFLE.originX = -(WAFFLE.pad + WAFFLE.margin);
+WAFFLE.originY = WAFFLE.originX;
 
 // A lens/vesica shape (pointed top and bottom, bulging sides) instead of a
 // square; avoids the Hermann grid illusion a straight lattice would produce.
@@ -81,13 +94,28 @@ function drawWaffle(container, cfg) {
     .attr("class", "waffle")
     // lets CSS turn its height budget into a width
     .style("--waffle-ar", WAFFLE.width / WAFFLE.height);
-  const g = wrap
+  const svgEl = wrap
     .append("svg")
     .attr("class", "waffle-svg")
-    .attr("viewBox", `0 0 ${WAFFLE.width} ${WAFFLE.height}`)
+    .attr(
+      "viewBox",
+      `${WAFFLE.originX} ${WAFFLE.originY} ${WAFFLE.width} ${WAFFLE.height}`
+    )
     .style("aspect-ratio", `${WAFFLE.width} / ${WAFFLE.height}`)
-    .attr("role", "img")
-    .append("g");
+    .attr("role", "img");
+
+  // The frame makes the year itself visible: a fixed box the filled days grow
+  // into, so the reader sees how much of it is left.
+  svgEl
+    .append("rect")
+    .attr("class", "waffle-frame")
+    .attr("x", -WAFFLE.pad)
+    .attr("y", -WAFFLE.pad)
+    .attr("width", WAFFLE.frameW)
+    .attr("height", WAFFLE.frameH)
+    .attr("rx", 3);
+
+  const g = svgEl.append("g");
 
   const hot = Math.round(cfg.days);
   const pitch = WAFFLE.cell + WAFFLE.gap;

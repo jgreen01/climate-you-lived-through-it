@@ -225,6 +225,9 @@ footer #attribution { max-width: 40rem; text-align: center; line-height: 1.5; }
     );
   }
 }
+/* the year as a fixed box: filled days grow into it, so what is left shows */
+.waffle-frame { fill: #fdfcfa; stroke: #d6d2ca; stroke-width: 1; }
+
 .waffle-label { font-size: 15px; font-weight: 600; color: var(--fg); margin-top: 0.6rem; }
 .waffle-sublabel { font-size: 12px; color: var(--muted); }
 .waffle-count { font-size: 18px; font-weight: 700; color: var(--accent); margin-top: 0.15rem; }

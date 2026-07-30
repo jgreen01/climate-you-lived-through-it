@@ -51,24 +51,17 @@ days is something you have already lived through in your own city, more of it
 is already locked in no matter what we do, and the size of the damage after
 that is still a choice.**
 
-Most climate visualizations show a global average line climbing across a
-century, which is easy to hold at arm's length. This one reframes the same
-science in a unit a person can picture: the number of extreme days in an
-average year. Miami averaged 38.1 hot days a year in the 1980s and 91.2 today,
-more than double, an increase no single year announced, because year-to-year
-variability hides a trend that a decade-scale comparison states plainly.
-Looking forward, Chicago's 2080s fork is about 31 hot days wide (85 under high
-emissions against 54 under low), close to an extra month of summer.
-
-The four metrics build outward from personal experience to global consequence.
-Hot days and hot nights are ones anyone can relate to; Panama City rises from 7
-hot nights a year today to a projected 362. Freezing days counter the
-assumption that warming is only a story about hot places: Potosí, Bolivia falls
-from 145.8 freezing days in the 1980s to about 16, or to zero, depending on the
-path taken. Dangerous heat, at or above 40C, asks whether some places stay
-livable as they are lived in today: Laredo averaged 5.9 such days a year in the
-1980s and 17 today, with 101 projected under high emissions, and Dubai rises
-from 68.4 in the 1980s to a projected 172.
+The message is carried in a unit anyone can picture, the number of extreme days
+in an average year, rather than degrees of global average warming. A figure
+like "1.5C above pre-industrial" is precise but meaningless to most people; it
+takes training to feel anything from it. The goal of this piece is to make
+climate change feel real and concrete, not an abstraction that only scientists
+and engineers can interpret, so the data is put in terms of something everyone
+already understands: a year, and how many of its days cross a line. Miami
+already went from 38.1 hot days a year in the 1980s to 91.2 today. Chicago is
+committed to roughly doubling its hot days again by 2045, from 20 to 40,
+whatever is decided now. And by the 2080s Chicago's two possible futures stand
+31 days apart, 85 against 54, which is the part still open to us.
 
 ## Narrative Structure
 

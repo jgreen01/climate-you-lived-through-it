@@ -149,21 +149,25 @@ single shape.
 A short written introduction precedes five scenes, ordered to build the
 argument.
 
-0. **The map ("Now find your city").** The overview and entry point,
+0. **"Now find your city."** The map: the overview and entry point,
    establishing the global pattern before any argument is made.
-1. **Then and now.** The 1980s against the most recent decade, both measured.
-   First, because proving the change is already real is the strongest opening.
-2. **The locked-in future.** Now against roughly 2045, so that having accepted
-   the past, the viewer sees the near future is already committed.
-3. **The fork.** The moderate against the high-emissions 2080s. The logical
-   center: the far future splits, and the distance between outcomes is the
-   point.
-4. **The century line.** One chart carrying the shared past forward and forking
-   into both futures, shaded between. Last, because it synthesizes the three
-   earlier comparisons into one image.
+1. **"You've already lived through it."** The 1980s against the most recent
+   decade, both measured. First, because proving the change is already real is
+   the strongest opening.
+2. **"The next 20 years are already decided."** Now against roughly 2045, so
+   that having accepted the past, the viewer sees the near future is already
+   committed.
+3. **"Two futures: the gap is the choice."** The low-emissions 2080s against
+   the high-emissions 2080s. The logical center: the far future splits, and the
+   distance between outcomes is the point.
+4. **"The century ahead, and the fork in it."** One chart carrying the shared
+   past forward and forking into both futures, shaded between. Last, because it
+   synthesizes the three earlier comparisons into one image.
 
 The order runs measured past, committed near future, undecided far future,
-synthesis.
+synthesis. A scene is defined by the time spans it compares, not by which
+extreme day is counted, so changing the city or the metric refills these same
+five scenes with different numbers and never changes the sequence.
 
 ## Annotations
 

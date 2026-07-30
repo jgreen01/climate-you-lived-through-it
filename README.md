@@ -11,9 +11,8 @@ with D3.
 | **Instructor** | John Hart |
 | **Assignment** | Final Project, Narrative Visualization |
 | **Live site** | https://jgreen01.github.io/climate-you-lived-through-it/ |
-| **Repository** | https://github.com/jgreen01/climate-you-lived-through-it |
 
-The essay answering the seven required questions begins at
+The essay covering the seven required sections begins at
 [Essay](#essay) below.
 
 **Libraries.** D3 v7 only, plus the two permitted additions, d3-annotation and
@@ -35,10 +34,6 @@ ensemble), for a moderate path (SSP2-4.5) and a high-emissions path (SSP5-8.5),
 delta-method bias-corrected against the model's own recent baseline. Four
 metrics are available: hot days (at or above 30C), hot nights (at or above
 26C), dangerous heat (at or above 40C), and freezing days (below 0C).
-
-**Running locally.** The site is fully static, no build step. `make serve`
-starts a local webserver; `make test` runs the Playwright suite. `make data`
-and `bake_grid.py` regenerate the baked JSON from the source APIs.
 
 ---
 

@@ -16,8 +16,8 @@ The essay covering the seven required sections begins at
 [Essay](#essay) below.
 
 **Libraries.** D3 v7 only, plus the two permitted additions, d3-annotation and
-topoJSON Client. All three are vendored under `js/lib/`. No other library,
-framework, or high-level visualization tool is used.
+topoJSON Client. All three are served with the site rather than from a CDN. No
+other library, framework, or high-level visualization tool is used.
 
 The site opens with a short written introduction, then an interactive world
 map. Every dot on that map is one of 166 real cities. Pick yours (or start with

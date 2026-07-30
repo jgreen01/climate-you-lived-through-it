@@ -239,18 +239,16 @@ a trigger only has to change a parameter and request a re-render.
   city's name and projected change; anywhere, magnification of the area beneath
   the cursor.
 
-The magnification works in two parts: a fisheye on the city dots, which pushes
-them apart so a single city can be picked out of a dense cluster like Europe or
-Southeast Asia, and a circular lens over the map surface holding a live scaled
-copy of the terrain beneath the cursor. Both exist so that the drill-down
-trigger stays usable on a crowded map.
-
 Free-form exploration is concentrated on the map on purpose. Scene 0 is where
-the reader's task is choosing, so hovering is rewarded there with a tooltip and
-magnification; the story scenes carry at most a plain hover tooltip on a waffle
-cell and otherwise hold still, leaving the always-visible annotations to make
-the argument. Exploration therefore feeds the drill-down rather than competing
-with it: it helps the reader pick a storyline, and then it gets out of the way.
+the reader's task is choosing, so hovering is rewarded there: a fisheye spreads
+the city dots apart so one can be picked out of a dense cluster like Europe or
+Southeast Asia, and a circular lens magnifies the terrain beneath the cursor.
+Neither changes any parameter; both exist so the drill-down trigger stays
+usable on a crowded map. The story scenes carry at most a plain hover tooltip
+on a waffle cell and otherwise hold still, leaving the always-visible
+annotations to make the argument. Exploration therefore feeds the drill-down
+rather than competing with it: it helps the reader pick a storyline, and then
+it gets out of the way.
 
 Affordances keep every option visible without instructions, so the reader never
 has to work out what is clickable. Back and Next are labeled with their

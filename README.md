@@ -97,8 +97,3 @@ The bundled data is derived from Open-Meteo and the World Bank Climate Change
 Knowledge Portal and remains subject to their terms; the vendored libraries
 carry their own licenses (D3 and `topojson-client` under ISC, `d3-annotation`
 under MIT).
-
----
-
-Originally built as the final project for CS 416, Data Visualization
-(University of Illinois, Summer 2026), and extended since.
